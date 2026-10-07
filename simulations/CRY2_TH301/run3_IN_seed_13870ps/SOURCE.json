@@ -211,8 +211,8 @@
    "role": "production start: gatekeeper chi1/chi2 match the first COLVAR row within 0.01 rad (the small difference comes from .gro precision or from the constraint step at the start of mdrun)"
   },
   {
-   "file": "seed_CRY2_TH301_57atom_primary3_13870ps.gro.gz",
-   "source": "F:/gpu03/Meta/CRY2_revision/build_kits/CRY2_TH301_seeds_all6_57atom_2026-10-07/gro/CRY2_TH301_57atom_primary3_13870ps.gro",
+   "file": "seed_CRY2_TH301_13870ps.gro.gz",
+   "source": "D:/CRY2/CRY2_paper/WTMD_seed/CRY2_TH301_13870ps.gro",
    "source_md5": "1ef720c49d58833fcc84d6b2f1d868d7",
    "source_bytes": 6700311,
    "gzip": true,
