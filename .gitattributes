@@ -1,0 +1,19 @@
+# PLUMED and GROMACS text inputs: keep LF endings
+*.dat   text eol=lf
+*.mdp   text eol=lf
+*.itp   text eol=lf
+*.top   text eol=lf
+*.ndx   text eol=lf
+*.gro   text eol=lf
+*.pdb   text eol=lf
+*.xvg   text eol=lf
+*.csv   text eol=lf
+*.py    text eol=lf
+*.md    text eol=lf
+COLVAR* text eol=lf
+HILLS*  text eol=lf
+
+# Compressed data files (gzip) are binary; must follow the HILLS*/COLVAR* text rules above
+*.gz    binary
+# Run folders are stored byte-exact so that every file matches the md5 recorded in its SOURCE.json
+simulations/** -text

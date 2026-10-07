@@ -1,0 +1,137 @@
+{
+ "run": "simulations/CRY1_TH301/primary2_transition_seed_24710ps",
+ "system": "CRY1_TH301",
+ "label": "Primary Run 2 (near-zero chi2 seed, 24710 ps)",
+ "ligand": "TH301, 57-atom cyclopentane (DYX_smiles_GMX.itp, md5 38fe05ce...)",
+ "source_folder": "F:/gpu03/Meta/CRY1/CRY1_WTMD/CRY1_th301_02_transition_24710ps",
+ "gatekeeper_torsion_atoms": {
+  "chi1": [
+   6106,
+   6108,
+   6110,
+   6113
+  ],
+  "chi2": [
+   6108,
+   6110,
+   6113,
+   6114
+  ]
+ },
+ "hills": {
+  "rows": 500025,
+  "t_first": 1.0,
+  "t_last": 500000.0,
+  "non_increasing_steps": 1,
+  "first_row": [
+   1.0,
+   -3.079666892492922,
+   0.1751369730935375
+  ]
+ },
+ "colvar": {
+  "rows": 500001,
+  "t_first": 0.0,
+  "t_last": 500000.0,
+  "non_increasing_steps": 0,
+  "first_row": [
+   0.0,
+   -2.869496,
+   0.01048
+  ]
+ },
+ "colvar_t0_deg": [
+  0.0,
+  -164.41001012967166,
+  0.6004597692971028
+ ],
+ "start_candidates": [
+  {
+   "file": "conf.gro",
+   "title": "2 TH301 COMPOUND in water t= 24710.00000 step= 12355000",
+   "atoms": 72830,
+   "velocities": false,
+   "chi1": -2.869498245694885,
+   "chi2": 0.010478781179881666,
+   "max_dchi_vs_colvar_t0": 2.2456948851612424e-06,
+   "match": "exact"
+  }
+ ],
+ "start_identified": true,
+ "notes": "",
+ "files": [
+  {
+   "file": "HILLS_md_02_transition_24710ps.gz",
+   "source": "F:/gpu03/Meta/CRY1/CRY1_WTMD/CRY1_th301_02_transition_24710ps/HILLS_md_02_transition_24710ps",
+   "source_md5": "cf96fecbb8506de70f43b9a50f25330d",
+   "source_bytes": 81004854,
+   "gzip": true,
+   "stored_md5": "0c0527183cbe9b1577339d5fd46e4b43",
+   "stored_bytes": 16443946
+  },
+  {
+   "file": "COLVAR_WTMD_02.gz",
+   "source": "F:/gpu03/Meta/CRY1/CRY1_WTMD/CRY1_th301_02_transition_24710ps/COLVAR_WTMD_02",
+   "source_md5": "cedf44e00d0e083d441f35d667cd6fc0",
+   "source_bytes": 16986507,
+   "gzip": true,
+   "stored_md5": "d97dba82b367d23cecf2322951717899",
+   "stored_bytes": 5464011
+  },
+  {
+   "file": "DYX_smiles_GMX.itp",
+   "source": "F:/gpu03/Meta/CRY1/CRY1_WTMD/CRY1_th301_02_transition_24710ps/DYX_smiles_GMX.itp",
+   "source_md5": "38fe05ce2536d102feae61234dd1ebd7",
+   "source_bytes": 42457,
+   "gzip": false,
+   "stored_md5": "38fe05ce2536d102feae61234dd1ebd7",
+   "stored_bytes": 42457
+  },
+  {
+   "file": "md.mdp",
+   "source": "F:/gpu03/Meta/CRY1/CRY1_WTMD/CRY1_th301_02_transition_24710ps/md.mdp",
+   "source_md5": "1b23023a3cfb3bf8c98648c6fd4477a2",
+   "source_bytes": 1388,
+   "gzip": false,
+   "stored_md5": "1b23023a3cfb3bf8c98648c6fd4477a2",
+   "stored_bytes": 1388
+  },
+  {
+   "file": "plumed.dat",
+   "source": "F:/gpu03/Meta/CRY1/CRY1_WTMD/CRY1_th301_02_transition_24710ps/plumed.dat",
+   "source_md5": "60c7142ffaeec069020617c598726090",
+   "source_bytes": 382,
+   "gzip": false,
+   "stored_md5": "60c7142ffaeec069020617c598726090",
+   "stored_bytes": 382
+  },
+  {
+   "file": "plumed_reweight.dat",
+   "source": "F:/gpu03/Meta/CRY1/CRY1_WTMD/CRY1_th301_02_transition_24710ps/plumed_reweight.dat",
+   "source_md5": "8928ecf694a9e5dca123f2b5466738f8",
+   "source_bytes": 484,
+   "gzip": false,
+   "stored_md5": "8928ecf694a9e5dca123f2b5466738f8",
+   "stored_bytes": 484
+  },
+  {
+   "file": "topol.top.gz",
+   "source": "F:/gpu03/Meta/CRY1/CRY1_WTMD/CRY1_th301_02_transition_24710ps/topol.top",
+   "source_md5": "b4ff129a4639b0450ff8dc52eda9486b",
+   "source_bytes": 2180037,
+   "gzip": true,
+   "stored_md5": "009387014a0f339a1409af411652991a",
+   "stored_bytes": 282143
+  },
+  {
+   "file": "start_conf.gro.gz",
+   "source": "F:/gpu03/Meta/CRY1/CRY1_WTMD/CRY1_th301_02_transition_24710ps/conf.gro",
+   "source_md5": "d733e51a12fb745901fd86290e140aaf",
+   "source_bytes": 3277503,
+   "gzip": true,
+   "stored_md5": "ff13508d456b2cb88d1d5c7b416448bc",
+   "stored_bytes": 928026,
+   "role": "production start: coordinates equal the first COLVAR row (|dchi| < 1e-4 rad)"
+  }
+ ]
+}

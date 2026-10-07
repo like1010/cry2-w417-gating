@@ -1,0 +1,43 @@
+{
+ "stage": "CRY2_apo_01",
+ "source_folder": "F:/gpu03/Meta/CRY2_revision/GPU_revision/CRY2_apo_protcol/CRY2_apo_01",
+ "notes": "Staged seeding chain of apo CRY2.",
+ "files": [
+  {
+   "file": "COLVAR_01.gz",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/CRY2_apo_protcol/CRY2_apo_01/COLVAR_01",
+   "source_md5": "0fa792e6217d52571d16367e5a058004",
+   "source_bytes": 328948,
+   "gzip": true,
+   "stored_md5": "8defdc1a55d019d7ffaa047ca4f09783",
+   "stored_bytes": 108843
+  },
+  {
+   "file": "md.mdp",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/CRY2_apo_protcol/CRY2_apo_01/md.mdp",
+   "source_md5": "7203bbecebc0b781692f1a92fbde14e1",
+   "source_bytes": 2848,
+   "gzip": false,
+   "stored_md5": "7203bbecebc0b781692f1a92fbde14e1",
+   "stored_bytes": 2848
+  },
+  {
+   "file": "npt_apo.mdp",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/CRY2_apo_protcol/CRY2_apo_01/npt_apo.mdp",
+   "source_md5": "7b75fee3a498beadd19ef386b7b427b4",
+   "source_bytes": 2473,
+   "gzip": false,
+   "stored_md5": "7b75fee3a498beadd19ef386b7b427b4",
+   "stored_bytes": 2473
+  },
+  {
+   "file": "plumed.dat",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/CRY2_apo_protcol/CRY2_apo_01/plumed.dat",
+   "source_md5": "9596fac0c204b780901e98883270f053",
+   "source_bytes": 627,
+   "gzip": false,
+   "stored_md5": "9596fac0c204b780901e98883270f053",
+   "stored_bytes": 627
+  }
+ ]
+}

@@ -1,0 +1,8 @@
+topology: protein 8196, ligand 57, SOL 46877, CL 9 -> 148893 atoms
+primary1_960ps    OK  atoms 148893, names=top True, protein=seed True, solvent=seed True, box=seed True, ligand H 24, W417 chi1/chi2 -161.85/-75.77 deg (seed -161.85/-75.77)
+primary2_11550ps  OK  atoms 148893, names=top True, protein=seed True, solvent=seed True, box=seed True, ligand H 24, W417 chi1/chi2 -116.35/+2.17 deg (seed -116.35/+2.17)
+primary3_13870ps  OK  atoms 148893, names=top True, protein=seed True, solvent=seed True, box=seed True, ligand H 24, W417 chi1/chi2 +174.54/+94.77 deg (seed +174.54/+94.77)
+val1_73660ps      OK  atoms 148893, names=top True, protein=seed True, solvent=seed True, box=seed True, ligand H 24, W417 chi1/chi2 -73.54/+0.08 deg (seed -73.54/+0.08)
+val2_97240ps      OK  atoms 148893, names=top True, protein=seed True, solvent=seed True, box=seed True, ligand H 24, W417 chi1/chi2 -136.84/+94.37 deg (seed -136.84/+94.37)
+val3_86660ps      OK  atoms 148893, names=top True, protein=seed True, solvent=seed True, box=seed True, ligand H 24, W417 chi1/chi2 +169.89/-77.02 deg (seed +169.89/-77.02)
+ALL OK

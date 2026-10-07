@@ -1,0 +1,239 @@
+{
+ "run": "simulations/CRY2_TH301/run1_OUT_seed_960ps",
+ "system": "CRY2_TH301",
+ "label": "Run 1 (OUT seed, 960 ps)",
+ "ligand": "TH301, 57-atom cyclopentane (DYX_smiles_GMX.itp, md5 38fe05ce...)",
+ "source_folder": "F:/gpu03/Meta/CRY2_revision/GPU_revision/seed01_960ps",
+ "gatekeeper_torsion_atoms": {
+  "chi1": [
+   6384,
+   6386,
+   6388,
+   6391
+  ],
+  "chi2": [
+   6386,
+   6388,
+   6391,
+   6392
+  ]
+ },
+ "hills": {
+  "rows": 500000,
+  "t_first": 1.0,
+  "t_last": 500000.0,
+  "non_increasing_steps": 0,
+  "first_row": [
+   1.0,
+   2.942007771941304,
+   -1.06648234778367
+  ]
+ },
+ "colvar": {
+  "rows": 500001,
+  "t_first": 0.0,
+  "t_last": 500000.0,
+  "non_increasing_steps": 0,
+  "first_row": [
+   0.0,
+   -2.966226,
+   -1.342879
+  ]
+ },
+ "colvar_t0_deg": [
+  0.0,
+  -169.95223088197213,
+  -76.94129909674847
+ ],
+ "start_candidates": [
+  {
+   "file": "npt.gro",
+   "title": "CRY2_TH301 in water",
+   "atoms": 148893,
+   "velocities": true,
+   "chi1": -2.964866732702661,
+   "chi2": -1.340882052094608,
+   "max_dchi_vs_colvar_t0": 0.0019969479053916217,
+   "match": "rounding"
+  }
+ ],
+ "start_identified": true,
+ "notes": "em1 (ring carbons free), em2, 100 ps NVT + 100 ps NPT (protein and ligand heavy atoms restrained, new 300 K velocities), then 500 ns WT-MetaD from npt.gro/npt.cpt (md.mdp).",
+ "files": [
+  {
+   "file": "HILLS_fix_md_01_960ps_500ns.gz",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/seed01_960ps/HILLS_fix_md_01_960ps_500ns",
+   "source_md5": "a3b4fde187d9a9201ae89187fae3b0c6",
+   "source_bytes": 81000603,
+   "gzip": true,
+   "stored_md5": "fc130e60e0dd0625bcdfe03b6b09076c",
+   "stored_bytes": 16480433
+  },
+  {
+   "file": "COLVAR_fix_md_01_960ps_500ns.gz",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/seed01_960ps/COLVAR_fix_md_01_960ps_500ns",
+   "source_md5": "9ede0574e470e7ff0cea65b144ab58ab",
+   "source_bytes": 16990021,
+   "gzip": true,
+   "stored_md5": "9b819cc8e92550c905d6f445586a35e0",
+   "stored_bytes": 5496333
+  },
+  {
+   "file": "DYX_smiles_GMX.itp",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/seed01_960ps/DYX_smiles_GMX.itp",
+   "source_md5": "38fe05ce2536d102feae61234dd1ebd7",
+   "source_bytes": 42457,
+   "gzip": false,
+   "stored_md5": "38fe05ce2536d102feae61234dd1ebd7",
+   "stored_bytes": 42457
+  },
+  {
+   "file": "em1.mdp",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/seed01_960ps/em1.mdp",
+   "source_md5": "77d10a17356d128318225573b10bfc73",
+   "source_bytes": 1459,
+   "gzip": false,
+   "stored_md5": "47cd5034cf772b81a916d7c60ad6bdc2",
+   "stored_bytes": 1309,
+   "edited": "comment lines only; parameters unchanged",
+   "edited_content_md5": "47cd5034cf772b81a916d7c60ad6bdc2"
+  },
+  {
+   "file": "em2.mdp",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/seed01_960ps/em2.mdp",
+   "source_md5": "abb91ccddc0be10624aa9671226f8256",
+   "source_bytes": 1398,
+   "gzip": false,
+   "stored_md5": "5d50da1407bca5827344e821771fc034",
+   "stored_bytes": 1248,
+   "edited": "comment lines only; parameters unchanged",
+   "edited_content_md5": "5d50da1407bca5827344e821771fc034"
+  },
+  {
+   "file": "md.mdp",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/seed01_960ps/md.mdp",
+   "source_md5": "ea7332aa68a58ee8ab5d021ab6ff34b6",
+   "source_bytes": 2838,
+   "gzip": false,
+   "stored_md5": "ea7332aa68a58ee8ab5d021ab6ff34b6",
+   "stored_bytes": 2838
+  },
+  {
+   "file": "npt.mdp",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/seed01_960ps/npt.mdp",
+   "source_md5": "b64ff61630a10bf57ceba7601b0c42c1",
+   "source_bytes": 3062,
+   "gzip": false,
+   "stored_md5": "4dd8ec208477d71b249c43f9bdbd64e6",
+   "stored_bytes": 2820,
+   "edited": "comment lines only; parameters unchanged",
+   "edited_content_md5": "4dd8ec208477d71b249c43f9bdbd64e6"
+  },
+  {
+   "file": "nvt.mdp",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/seed01_960ps/nvt.mdp",
+   "source_md5": "e0694330c191044906a18c990c3c4469",
+   "source_bytes": 2847,
+   "gzip": false,
+   "stored_md5": "065936f6fde1f0e9a710fe866afe3636",
+   "stored_bytes": 2590,
+   "edited": "comment lines only; parameters unchanged",
+   "edited_content_md5": "065936f6fde1f0e9a710fe866afe3636"
+  },
+  {
+   "file": "plumed.dat",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/seed01_960ps/plumed.dat",
+   "source_md5": "7506adaad82d9cf8b5441cc1d581dfc8",
+   "source_bytes": 577,
+   "gzip": false,
+   "stored_md5": "8fb28acc1d5257b0fb9783bc5d39d131",
+   "stored_bytes": 509,
+   "edited": "comment lines only; parameters unchanged",
+   "edited_content_md5": "8fb28acc1d5257b0fb9783bc5d39d131"
+  },
+  {
+   "file": "plumed_restart_12t.dat",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/seed01_960ps/plumed_restart_12t.dat",
+   "source_md5": "d9b4664bbdc430ed6b047b1058211c15",
+   "source_bytes": 585,
+   "gzip": false,
+   "stored_md5": "63b38398578cf7d11739f42105a283b5",
+   "stored_bytes": 517,
+   "edited": "comment lines only; parameters unchanged",
+   "edited_content_md5": "63b38398578cf7d11739f42105a283b5"
+  },
+  {
+   "file": "plumed_restart_6t.dat",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/seed01_960ps/plumed_restart_6t.dat",
+   "source_md5": "d9b4664bbdc430ed6b047b1058211c15",
+   "source_bytes": 585,
+   "gzip": false,
+   "stored_md5": "63b38398578cf7d11739f42105a283b5",
+   "stored_bytes": 517,
+   "edited": "comment lines only; parameters unchanged",
+   "edited_content_md5": "63b38398578cf7d11739f42105a283b5"
+  },
+  {
+   "file": "posre.itp",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/seed01_960ps/posre.itp",
+   "source_md5": "ac90998e3d9f0c33b1482eb1b4f73d6f",
+   "source_bytes": 128241,
+   "gzip": false,
+   "stored_md5": "ac90998e3d9f0c33b1482eb1b4f73d6f",
+   "stored_bytes": 128241
+  },
+  {
+   "file": "posre_DYX_smiles.itp",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/seed01_960ps/posre_DYX_smiles.itp",
+   "source_md5": "c06c006c8f1eaca4a7ccf963bae7ad22",
+   "source_bytes": 1516,
+   "gzip": false,
+   "stored_md5": "390765baab34f0e27e68935956ea28b9",
+   "stored_bytes": 1438,
+   "edited": "comment lines only; parameters unchanged",
+   "edited_content_md5": "390765baab34f0e27e68935956ea28b9"
+  },
+  {
+   "file": "posre_DYX_smiles_ringfree.itp",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/seed01_960ps/posre_DYX_smiles_ringfree.itp",
+   "source_md5": "4bb833441bb52fca29783536b5984ce5",
+   "source_bytes": 1406,
+   "gzip": false,
+   "stored_md5": "e0bd40d8174e67c3fe1bc678fe309d4f",
+   "stored_bytes": 1328,
+   "edited": "comment lines only; parameters unchanged",
+   "edited_content_md5": "e0bd40d8174e67c3fe1bc678fe309d4f"
+  },
+  {
+   "file": "topol.top.gz",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/seed01_960ps/topol.top",
+   "source_md5": "530357c6105d060178c0d872a10da4fc",
+   "source_bytes": 2311192,
+   "gzip": true,
+   "stored_md5": "4cc7cea1d9263771994381ed77dbd477",
+   "stored_bytes": 302009
+  },
+  {
+   "file": "start_npt.gro.gz",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/seed01_960ps/npt.gro",
+   "source_md5": "ed3c0ce66ea1994325b4c5a7aefc06bc",
+   "source_bytes": 10273675,
+   "gzip": true,
+   "stored_md5": "70a8b5f89bcac8cccef3f70b08b0ba6f",
+   "stored_bytes": 3352104,
+   "role": "production start: gatekeeper chi1/chi2 match the first COLVAR row within 0.01 rad (the small difference comes from .gro precision or from the constraint step at the start of mdrun)"
+  },
+  {
+   "file": "seed_CRY2_TH301_57atom_primary1_960ps.gro.gz",
+   "source": "F:/gpu03/Meta/CRY2_revision/build_kits/CRY2_TH301_seeds_all6_57atom_2026-10-07/gro/CRY2_TH301_57atom_primary1_960ps.gro",
+   "source_md5": "70c04ad509be303de3f4f608a160c461",
+   "source_bytes": 6700309,
+   "gzip": true,
+   "stored_md5": "acf3f5da8301103103cf53d6bc78416d",
+   "stored_bytes": 1909453,
+   "role": "seed frame selected from the staged chain",
+   "edited": "comment lines only; parameters unchanged",
+   "edited_content_md5": "2451ba4f1c75cc8d6df3befac93b7cca"
+  }
+ ]
+}

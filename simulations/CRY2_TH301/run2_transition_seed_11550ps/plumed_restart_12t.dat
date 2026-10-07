@@ -1,0 +1,23 @@
+RESTART
+UNITS LENGTH=A TIME=ps
+
+# W417 side-chain torsions: chi1 = N-CA-CB-CG, chi2 = CA-CB-CG-CD1
+chi1: TORSION ATOMS=6384,6386,6388,6391
+chi2: TORSION ATOMS=6386,6388,6391,6392
+
+# Well-Tempered Metadynamics
+METAD ...
+  ARG=chi1,chi2
+  SIGMA=0.3,0.3
+  HEIGHT=0.01
+  PACE=500
+  BIASFACTOR=10
+  TEMP=300
+  GRID_MIN=-pi,-pi
+  GRID_MAX=pi,pi
+  GRID_BIN=384,384
+  FILE=HILLS_WTMD_from_EM
+... METAD
+
+# Write chi1 and chi2 to COLVAR every 500 steps
+PRINT ARG=chi1,chi2 FILE=COLVAR_WTMD_from_EM STRIDE=500

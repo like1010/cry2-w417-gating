@@ -1,0 +1,20 @@
+UNITS LENGTH=A TIME=ps
+
+# W399 chi1 = N-CA-CB-CG, chi2 = CA-CB-CG-CD1
+chi1: TORSION ATOMS=6106,6108,6110,6113
+chi2: TORSION ATOMS=6108,6110,6113,6114
+
+# Well-Tempered Metadynamics reweight: reload full HILLS, add no new hills
+METAD ...
+  LABEL=metad
+  ARG=chi1,chi2
+  SIGMA=0.3,0.3
+  HEIGHT=0.0
+  PACE=10000000
+  BIASFACTOR=10
+  TEMP=300
+  FILE=HILLS_md_03_negative_113160ps
+  RESTART=YES
+... METAD
+
+PRINT ARG=chi1,chi2,metad.bias FILE=COLVAR_03_negative_113160ps_REWEIGHT STRIDE=1

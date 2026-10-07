@@ -1,0 +1,146 @@
+{
+ "run": "simulations/CRY2_apo/unstaged_IN_cMD_455760ps",
+ "system": "CRY2_apo",
+ "label": "Unstaged run from an IN frame of unbiased MD (455.76 ns)",
+ "ligand": "none (apo)",
+ "source_folder": "F:/gpu03/Meta/CRY2_revision/GPU_revision/CRY2_seed_apo_WTMD/CRY2_seed_apo_unbiased_in_455760ps",
+ "gatekeeper_torsion_atoms": {
+  "chi1": [
+   6384,
+   6386,
+   6388,
+   6391
+  ],
+  "chi2": [
+   6386,
+   6388,
+   6391,
+   6392
+  ]
+ },
+ "hills": {
+  "rows": 500000,
+  "t_first": 1.0,
+  "t_last": 500000.0,
+  "non_increasing_steps": 0,
+  "first_row": [
+   1.0,
+   -3.05583145325933,
+   1.764913037904902
+  ]
+ },
+ "colvar": {
+  "rows": 500001,
+  "t_first": 0.0,
+  "t_last": 500000.0,
+  "non_increasing_steps": 0,
+  "first_row": [
+   0.0,
+   -2.755902,
+   1.24464
+  ]
+ },
+ "colvar_t0_deg": [
+  0.0,
+  -157.90155335166259,
+  71.31261901316277
+ ],
+ "start_candidates": [
+  {
+   "file": "seed_apo_unbiased_in_455760ps.gro",
+   "title": "CRY2_TH301 in water t= 455760.00000 step= 227880000",
+   "atoms": 112374,
+   "velocities": false,
+   "chi1": -2.7558520268669464,
+   "chi2": 1.244499941336557,
+   "max_dchi_vs_colvar_t0": 0.0001400586634430212,
+   "match": "rounding"
+  }
+ ],
+ "start_identified": true,
+ "notes": "",
+ "files": [
+  {
+   "file": "HILLS_CRY2_seed_apo_unbiased_in_455760ps.gz",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/CRY2_seed_apo_WTMD/CRY2_seed_apo_unbiased_in_455760ps/HILLS_CRY2_seed_apo_unbiased_in_455760ps",
+   "source_md5": "fc40ea4b4053ef3f9dfb528cb0050296",
+   "source_bytes": 81000201,
+   "gzip": true,
+   "stored_md5": "67ae5e8f94722c563ef7da6420ede660",
+   "stored_bytes": 16398382
+  },
+  {
+   "file": "COLVAR_CRY2_seed_apo_unbiased_in_455760ps.gz",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/CRY2_seed_apo_WTMD/CRY2_seed_apo_unbiased_in_455760ps/COLVAR_CRY2_seed_apo_unbiased_in_455760ps",
+   "source_md5": "9eba2e312d501a7a6c7b6a74e47bf5a9",
+   "source_bytes": 16999601,
+   "gzip": true,
+   "stored_md5": "9afafb90c131f00354b03a3dd3de5222",
+   "stored_bytes": 5446565
+  },
+  {
+   "file": "md.mdp",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/CRY2_seed_apo_WTMD/CRY2_seed_apo_unbiased_in_455760ps/md.mdp",
+   "source_md5": "67ae64d020db4ec0830f30240e860fe0",
+   "source_bytes": 1492,
+   "gzip": false,
+   "stored_md5": "67ae64d020db4ec0830f30240e860fe0",
+   "stored_bytes": 1492
+  },
+  {
+   "file": "plumed.dat",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/CRY2_seed_apo_WTMD/CRY2_seed_apo_unbiased_in_455760ps/plumed.dat",
+   "source_md5": "e92cf93278b414120c45b7d82ad31cb5",
+   "source_bytes": 439,
+   "gzip": false,
+   "stored_md5": "e92cf93278b414120c45b7d82ad31cb5",
+   "stored_bytes": 439
+  },
+  {
+   "file": "plumed_optimized.dat",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/CRY2_seed_apo_WTMD/CRY2_seed_apo_unbiased_in_455760ps/plumed_optimized.dat",
+   "source_md5": "daf5e155d0289e42b5511099dd5882d3",
+   "source_bytes": 494,
+   "gzip": false,
+   "stored_md5": "daf5e155d0289e42b5511099dd5882d3",
+   "stored_bytes": 494
+  },
+  {
+   "file": "posre.itp",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/CRY2_seed_apo_WTMD/CRY2_seed_apo_unbiased_in_455760ps/posre.itp",
+   "source_md5": "ac90998e3d9f0c33b1482eb1b4f73d6f",
+   "source_bytes": 128241,
+   "gzip": false,
+   "stored_md5": "ac90998e3d9f0c33b1482eb1b4f73d6f",
+   "stored_bytes": 128241
+  },
+  {
+   "file": "topol.top.gz",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/CRY2_seed_apo_WTMD/CRY2_seed_apo_unbiased_in_455760ps/topol.top",
+   "source_md5": "7f8af100d1abf007ca445ff96bc9cc70",
+   "source_bytes": 2310943,
+   "gzip": true,
+   "stored_md5": "43cacd26e04c4678d7380ea81cd02c9b",
+   "stored_bytes": 301910
+  },
+  {
+   "file": "tpr_parameters.mdp",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/CRY2_seed_apo_WTMD/CRY2_seed_apo_unbiased_in_455760ps/tpr_parameters.mdp",
+   "source_md5": "a2f925008f703b91056755624afe47a1",
+   "source_bytes": 4475,
+   "gzip": false,
+   "stored_md5": "a2f925008f703b91056755624afe47a1",
+   "stored_bytes": 4475
+  },
+  {
+   "file": "start_seed_apo_unbiased_in_455760ps.gro.gz",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/CRY2_seed_apo_WTMD/CRY2_seed_apo_unbiased_in_455760ps/seed_apo_unbiased_in_455760ps.gro",
+   "source_md5": "9141eaddf9309847539f2542e704b7b1",
+   "source_bytes": 5056920,
+   "gzip": true,
+   "stored_md5": "d7990348a3c692ac0c2ca90318f7836d",
+   "stored_bytes": 1436050,
+   "role": "production start: gatekeeper chi1/chi2 match the first COLVAR row within 0.01 rad (the small difference comes from .gro precision or from the constraint step at the start of mdrun)"
+  }
+ ]
+}

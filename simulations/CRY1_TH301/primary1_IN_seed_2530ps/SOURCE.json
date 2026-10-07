@@ -1,0 +1,137 @@
+{
+ "run": "simulations/CRY1_TH301/primary1_IN_seed_2530ps",
+ "system": "CRY1_TH301",
+ "label": "Primary Run 1 (IN seed, 2530 ps)",
+ "ligand": "TH301, 57-atom cyclopentane (DYX_smiles_GMX.itp, md5 38fe05ce...)",
+ "source_folder": "F:/gpu03/Meta/CRY1/CRY1_WTMD/CRY1_TH301_01_positive_2530ps",
+ "gatekeeper_torsion_atoms": {
+  "chi1": [
+   6106,
+   6108,
+   6110,
+   6113
+  ],
+  "chi2": [
+   6108,
+   6110,
+   6113,
+   6114
+  ]
+ },
+ "hills": {
+  "rows": 500025,
+  "t_first": 1.0,
+  "t_last": 500000.0,
+  "non_increasing_steps": 1,
+  "first_row": [
+   1.0,
+   -2.916829252510441,
+   1.739656809331427
+  ]
+ },
+ "colvar": {
+  "rows": 500001,
+  "t_first": 0.0,
+  "t_last": 500000.0,
+  "non_increasing_steps": 0,
+  "first_row": [
+   0.0,
+   -2.65601,
+   1.651647
+  ]
+ },
+ "colvar_t0_deg": [
+  0.0,
+  -152.1781633445418,
+  94.63240234544388
+ ],
+ "start_candidates": [
+  {
+   "file": "conf.gro",
+   "title": "2 TH301 COMPOUND in water t= 2530.00000 step= 1265000",
+   "atoms": 72830,
+   "velocities": false,
+   "chi1": -2.656009093853734,
+   "chi2": 1.6516339849785453,
+   "max_dchi_vs_colvar_t0": 1.3015021454787501e-05,
+   "match": "exact"
+  }
+ ],
+ "start_identified": true,
+ "notes": "md.mdp is the shared production file of CRY1/CRY1_WTMD (the run folder has none).",
+ "files": [
+  {
+   "file": "HILLS_md_01_positive_2530ps.gz",
+   "source": "F:/gpu03/Meta/CRY1/CRY1_WTMD/CRY1_TH301_01_positive_2530ps/HILLS_md_01_positive_2530ps",
+   "source_md5": "b2737766a6a045752733a207894d1d63",
+   "source_bytes": 81004452,
+   "gzip": true,
+   "stored_md5": "63c0d30342a247484e6646b73790960d",
+   "stored_bytes": 16418453
+  },
+  {
+   "file": "COLVAR_md_01.gz",
+   "source": "F:/gpu03/Meta/CRY1/CRY1_WTMD/CRY1_TH301_01_positive_2530ps/COLVAR_md_01",
+   "source_md5": "6f409ddfca88fea9837939e996de07c4",
+   "source_bytes": 16951944,
+   "gzip": true,
+   "stored_md5": "4be7d73f4157161023f1a8ed350a7caa",
+   "stored_bytes": 5457945
+  },
+  {
+   "file": "DYX_smiles_GMX.itp",
+   "source": "F:/gpu03/Meta/CRY1/CRY1_WTMD/CRY1_TH301_01_positive_2530ps/DYX_smiles_GMX.itp",
+   "source_md5": "38fe05ce2536d102feae61234dd1ebd7",
+   "source_bytes": 42457,
+   "gzip": false,
+   "stored_md5": "38fe05ce2536d102feae61234dd1ebd7",
+   "stored_bytes": 42457
+  },
+  {
+   "file": "plumed.dat",
+   "source": "F:/gpu03/Meta/CRY1/CRY1_WTMD/CRY1_TH301_01_positive_2530ps/plumed.dat",
+   "source_md5": "664b2d0ebb7240793e3ee6d1b873bbfd",
+   "source_bytes": 378,
+   "gzip": false,
+   "stored_md5": "664b2d0ebb7240793e3ee6d1b873bbfd",
+   "stored_bytes": 378
+  },
+  {
+   "file": "plumed_reweight.dat",
+   "source": "F:/gpu03/Meta/CRY1/CRY1_WTMD/CRY1_TH301_01_positive_2530ps/plumed_reweight.dat",
+   "source_md5": "b018adcb29b7413eb8cde5ec45422d84",
+   "source_bytes": 478,
+   "gzip": false,
+   "stored_md5": "b018adcb29b7413eb8cde5ec45422d84",
+   "stored_bytes": 478
+  },
+  {
+   "file": "topol.top.gz",
+   "source": "F:/gpu03/Meta/CRY1/CRY1_WTMD/CRY1_TH301_01_positive_2530ps/topol.top",
+   "source_md5": "b17479c1a4af58d1a872cdcaef55ec79",
+   "source_bytes": 2180055,
+   "gzip": true,
+   "stored_md5": "d093daf56b704b4e97c6d3017eaf516e",
+   "stored_bytes": 282157
+  },
+  {
+   "file": "md.mdp",
+   "source": "F:/gpu03/Meta/CRY1/CRY1_WTMD/md.mdp",
+   "source_md5": "1b23023a3cfb3bf8c98648c6fd4477a2",
+   "source_bytes": 1388,
+   "gzip": false,
+   "stored_md5": "1b23023a3cfb3bf8c98648c6fd4477a2",
+   "stored_bytes": 1388
+  },
+  {
+   "file": "start_conf.gro.gz",
+   "source": "F:/gpu03/Meta/CRY1/CRY1_WTMD/CRY1_TH301_01_positive_2530ps/conf.gro",
+   "source_md5": "8b8965d4c9370a3df90ecc8d0e4858cb",
+   "source_bytes": 3277501,
+   "gzip": true,
+   "stored_md5": "3cdc22651bb40ba61fbae56cbdef5fd2",
+   "stored_bytes": 927963,
+   "role": "production start: coordinates equal the first COLVAR row (|dchi| < 1e-4 rad)"
+  }
+ ]
+}

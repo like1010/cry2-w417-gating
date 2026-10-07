@@ -1,0 +1,22 @@
+# Optimized continuation: periodic grid; original physics and hill schedule preserved.
+RESTART
+# CRY2 W417 chi1 N-CA-CB-CG; chi2 CA-CB-CG-CD1
+UNITS LENGTH=A TIME=ps
+
+chi1: TORSION ATOMS=6384,6386,6388,6391
+chi2: TORSION ATOMS=6386,6388,6391,6392
+
+METAD ...
+  ARG=chi1,chi2
+  SIGMA=0.3,0.3
+  HEIGHT=0.01
+  PACE=500
+  BIASFACTOR=10
+  TEMP=300
+  FILE=HILLS_CRY2_apo_02_positive_80480ps_500ns
+  GRID_MIN=-pi,-pi
+  GRID_MAX=pi,pi
+  GRID_BIN=256,256
+... METAD
+
+PRINT ARG=chi1,chi2 FILE=COLVAR_CRY2_apo_02_positive_80480ps_500ns STRIDE=500

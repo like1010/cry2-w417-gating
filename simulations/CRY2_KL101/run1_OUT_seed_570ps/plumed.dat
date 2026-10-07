@@ -1,0 +1,22 @@
+UNITS LENGTH=A TIME=ps
+
+# ïÒ? ¥ö1 ûú ¥ö2 ì£ØüÊÇ
+chi1: TORSION ATOMS=6384,6386,6388,6391
+chi2: TORSION ATOMS=6386,6388,6391,6392
+
+# Well-Tempered Metadynamics
+METAD ...
+  ARG=chi1,chi2
+  SIGMA=0.3,0.3
+  HEIGHT=0.01
+  PACE=500
+  GRID_MIN=-pi,-pi
+  GRID_MAX=pi,pi
+  GRID_BIN=384,384
+  BIASFACTOR=10
+  TEMP=300
+  FILE=HILLS_KL_md_01_570ps_500ns
+... METAD
+
+# ?õó COLVAR ?îé
+PRINT ARG=chi1,chi2 FILE=COLVAR_KL_md_01_570ps_500ns STRIDE=500

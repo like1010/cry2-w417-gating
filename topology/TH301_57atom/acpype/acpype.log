@@ -1,0 +1,110 @@
+===========================================================================
+| ACPYPE: AnteChamber PYthon Parser interfacE v. 2022.7.21 (c) 2026 AWSdS |
+===========================================================================
+DEBUG: CLI: -i COc1ccc(cc1)n1nc2c(c1NC(=O)[C@]1(CCCC1)c1ccc(cc1)Cl)CS(=O)(=O)C2 -b DYX_smiles -c bcc -n 0
+DEBUG: Python Version 3.10.9 (main, Mar 1 2023, 18:23:06) [GCC 11.2.0]
+DEBUG: Max execution time tolerance is 3h
+DEBUG: /home/cho/Amber/amber25/bin/antechamber -dr no -i DYX_smiles.mol2 -fi mol2 -o tmp -fo ac -pf y
+DEBUG: /bin/bash: /opt/anaconda3/2023.03/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+Info: The atom type is set to gaff; the options available to the -at flag are
+ gaff, gaff2, amber, bcc, abcg2, and sybyl.
+
+/bin/bash: /opt/anaconda3/2023.03/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+/bin/bash: /opt/anaconda3/2023.03/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+
+DEBUG: setResNameCheckCoords done
+DEBUG: Net charge drift '0.000000'
+==> ... charge set to 0
+==> Executing Antechamber...
+DEBUG: /home/cho/Amber/amber25/bin/antechamber -dr no -i DYX_smiles.mol2 -fi mol2 -o DYX_smiles_bcc_gaff2.mol2 -fo mol2 -c bcc -nc 0 -m 1 -s 2 -df 2 -at gaff2 -pf n 
+DEBUG: No file left to be removed
+==> * Antechamber OK *
+DEBUG: /home/cho/Amber/amber25/bin/parmchk2 -i DYX_smiles_bcc_gaff2.mol2 -f mol2 -o DYX_smiles_AC.frcmod -s 2
+==> * Parmchk OK *
+DEBUG: No crd or prm files left to be removed
+==> Executing Tleap...
+DEBUG: /home/cho/Amber/amber25/bin/tleap -f tleap.in
+DEBUG: ++++++++++start_quote+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+DEBUG: Checking 'UNL'....
+Checking parameters for unit 'UNL'.
+Checking for bond parameters.
+Checking for angle parameters.
+Unit is OK.
+DEBUG: ++++++++++end_quote+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+==> * Tleap OK *
+==> Removing temporary files...
+DEBUG: prmtop and inpcrd files loaded
+DEBUG: basename defined = 'DYX_smiles'
+DEBUG: getCoords done
+DEBUG: getABCOEFs done
+DEBUG: atom name 'Cl' HAS to be all UPPERCASE... Applying this here.
+DEBUG: charge to be balanced: total -0.0000009945
+DEBUG: balanceCharges done
+DEBUG: Balanced TotalCharge 0.0000000000
+DEBUG: PBC = None
+DEBUG: getAtoms done
+DEBUG: getBonds done
+DEBUG: getAngles done
+DEBUG: getDihedrals done
+==> Using OpenBabel v.3.1.0
+
+==> Writing NEW PDB file
+
+==> Writing CNS/XPLOR files
+
+DEBUG: chiralGroups 0
+==> Writing GROMACS files
+
+==> Disambiguating lower and uppercase atomtypes in GMX top file, even if identical.
+
+DEBUG: writing GRO file
+DEBUG: Box size estimated
+DEBUG: writing POSRE file
+DEBUG: atomTypes 17
+DEBUG: GMX atomtypes done
+DEBUG: atoms 57
+DEBUG: GMX atoms done
+DEBUG: bonds 61
+DEBUG: GMX bonds done
+DEBUG: atomPairs 147
+DEBUG: GMX pairs done
+DEBUG: angles 110
+DEBUG: GMX angles done
+DEBUG: setProperDihedralsCoef done
+DEBUG: properDihedralsCoefRB 168
+DEBUG: properDihedralsAlphaGamma 0
+DEBUG: properDihedralsGmx45 177
+==> Writing GMX dihedrals for GMX 4.5 and higher.
+
+DEBUG: GMX special proper dihedrals done
+DEBUG: improperDihedrals 18
+DEBUG: GMX improper dihedrals done
+==> Writing CHARMM files
+
+DEBUG: /home/cho/Amber/amber25/bin/antechamber -dr no -i DYX_smiles_bcc_gaff2.mol2 -fi mol2 -o DYX_smiles_CHARMM -fo charmm -s 2 -at gaff2 -pf n -rn UNL
+DEBUG: ++++++++++start_quote+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+DEBUG: /bin/bash: /opt/anaconda3/2023.03/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+Info: The atom type is set to gaff2; the options available to the -at flag are
+ gaff, gaff2, amber, bcc, abcg2, and sybyl.
+
+Info: Ignoring Mol2 record type (@<TRIPOS>SUBSTRUCTURE).
+Info: Finished reading file (DYX_smiles_bcc_gaff2.mol2); atoms read (57), bonds read (61).
+Info: Determining atomic numbers from atomic symbols which are case sensitive.
+Running: /home/cho/Amber/amber25/bin/bondtype -j full -i ANTECHAMBER_BOND_TYPE.AC0 -o ANTECHAMBER_BOND_TYPE.AC -f ac
+/bin/bash: /opt/anaconda3/2023.03/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+
+Running: /home/cho/Amber/amber25/bin/atomtype -i ANTECHAMBER_AC.AC0 -o ANTECHAMBER_AC.AC -p gaff2
+/bin/bash: /opt/anaconda3/2023.03/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+
+Running: /home/cho/Amber/amber25/bin/atomtype -i ANTECHAMBER_PREP.AC0 -o ANTECHAMBER_PREP.AC -p gaff2
+/bin/bash: /opt/anaconda3/2023.03/lib/libtinfo.so.6: no version information available (required by /bin/bash)
+
+Running: /home/cho/Amber/amber25/bin/charmmgen -i ANTECHAMBER_PREP.AC -f ac -o DYX_smiles_CHARMM -r UNL
+sh: 1: /home/cho/Amber/amber25/bin/charmmgen: not found
+/home/cho/Amber/amber25/bin/wrapped_progs/antechamber: Fatal Error!
+Cannot properly run "/home/cho/Amber/amber25/bin/charmmgen -i ANTECHAMBER_PREP.AC -f ac -o DYX_smiles_CHARMM -r UNL".
+DEBUG: ++++++++++end_quote+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+==> Writing pickle file DYX_smiles.pkl
+==> Removing temporary files...
+Total time of execution: 2m 57s
+DEBUG: No tmp folder left to be removed

@@ -1,0 +1,43 @@
+{
+ "stage": "KL101_CRY2_01",
+ "source_folder": "F:/gpu03/Meta/CRY2_revision/GPU_revision/KL101_CRY2_protocol/KL101_CRY2_01",
+ "notes": "Staged seeding chain of KL101-CRY2.",
+ "files": [
+  {
+   "file": "COLVAR_01.gz",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/KL101_CRY2_protocol/KL101_CRY2_01/COLVAR_01",
+   "source_md5": "fda9b19486b46dc1571347f93075a080",
+   "source_bytes": 328517,
+   "gzip": true,
+   "stored_md5": "41de0bd799e811a7a815407461da854d",
+   "stored_bytes": 109155
+  },
+  {
+   "file": "plumed.dat",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/KL101_CRY2_protocol/KL101_CRY2_01/plumed.dat",
+   "source_md5": "c9c891e37373fc173603c6153555e450",
+   "source_bytes": 615,
+   "gzip": false,
+   "stored_md5": "c9c891e37373fc173603c6153555e450",
+   "stored_bytes": 615
+  },
+  {
+   "file": "plumed_grid.dat",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/KL101_CRY2_protocol/KL101_CRY2_01/plumed_grid.dat",
+   "source_md5": "2322a4d051be2e79f6ea98bdaf7562e6",
+   "source_bytes": 678,
+   "gzip": false,
+   "stored_md5": "2322a4d051be2e79f6ea98bdaf7562e6",
+   "stored_bytes": 678
+  },
+  {
+   "file": "plumed_restart.dat",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/KL101_CRY2_protocol/KL101_CRY2_01/plumed_restart.dat",
+   "source_md5": "fefdca9af10690e2481dc91c394a20bd",
+   "source_bytes": 33,
+   "gzip": false,
+   "stored_md5": "fefdca9af10690e2481dc91c394a20bd",
+   "stored_bytes": 33
+  }
+ ]
+}

@@ -1,0 +1,15 @@
+UNITS LENGTH=A TIME=ps
+
+# W417 (TRP417) chi1 = N-CA-CB-CG, chi2 = CA-CB-CG-CD1
+chi1: TORSION ATOMS=6384,6386,6388,6391
+chi2: TORSION ATOMS=6386,6388,6391,6392
+
+# ͳ   chi2   0.33 rad ݾ Σ      Equilibration
+RESTRAINT ...
+  ARG=chi2
+  AT=0.746889188
+  KAPPA=500.0
+... RESTRAINT
+
+# ?   chi1    chi2       ?  
+PRINT ARG=chi1,chi2 FILE=COLVAR_equil STRIDE=5000

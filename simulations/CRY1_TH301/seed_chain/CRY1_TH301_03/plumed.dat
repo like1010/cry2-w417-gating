@@ -1,0 +1,20 @@
+UNITS LENGTH=A TIME=ps
+
+# W399 chi1 = N-CA-CB-CG, chi2 = CA-CB-CG-CD1
+chi1: TORSION ATOMS=6106,6108,6110,6113
+chi2: TORSION ATOMS=6108,6110,6113,6114
+
+
+# ��ǿ�� Metadynamics ����
+METAD ...
+  ARG=chi1,chi2
+  SIGMA=0.10,0.10
+  HEIGHT=0.3              # ��΢�������߶�
+  PACE=500                # �������ƫ�ã�0.5 ps һ�Σ�
+  FILE=HILLS_03_200ns
+  BIASFACTOR=12.0         # ������ǿ����ǿ��
+  TEMP=300
+  RESTART=NO
+... METAD
+
+PRINT ARG=chi1,chi2 FILE=COLVAR_03_200ns STRIDE=5000

@@ -1,0 +1,137 @@
+{
+ "run": "simulations/CRY2_apo/staged2_transition_seed_57640ps",
+ "system": "CRY2_apo",
+ "label": "Staged Run 2 (near-zero chi2 seed, 57640 ps of stage IV)",
+ "ligand": "none (apo)",
+ "source_folder": "F:/gpu03/Meta/CRY2_revision/GPU_revision/CRY2_apo_protcol/CRY2_apo_03_transition_57640ps_500ns",
+ "gatekeeper_torsion_atoms": {
+  "chi1": [
+   6384,
+   6386,
+   6388,
+   6391
+  ],
+  "chi2": [
+   6386,
+   6388,
+   6391,
+   6392
+  ]
+ },
+ "hills": {
+  "rows": 500000,
+  "t_first": 1.0,
+  "t_last": 500000.0,
+  "non_increasing_steps": 0,
+  "first_row": [
+   1.0,
+   -1.432571656678905,
+   -0.5104795930718362
+  ]
+ },
+ "colvar": {
+  "rows": 500001,
+  "t_first": 0.0,
+  "t_last": 500000.0,
+  "non_increasing_steps": 0,
+  "first_row": [
+   0.0,
+   -1.850391,
+   -3e-05
+  ]
+ },
+ "colvar_t0_deg": [
+  0.0,
+  -106.0195947489919,
+  -0.0017188733853924698
+ ],
+ "start_candidates": [
+  {
+   "file": "start.gro",
+   "title": "2 TH301 COMPOUND in water t= 57640.00000 step= 28820000",
+   "atoms": 88743,
+   "velocities": false,
+   "chi1": -1.850995956055635,
+   "chi2": 0.0009128367219118415,
+   "max_dchi_vs_colvar_t0": 0.0009428367219119771,
+   "match": "rounding"
+  }
+ ],
+ "start_identified": true,
+ "notes": "",
+ "files": [
+  {
+   "file": "HILLS_CRY2_apo_03_transition_57640ps_500ns.gz",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/CRY2_apo_protcol/CRY2_apo_03_transition_57640ps_500ns/HILLS_CRY2_apo_03_transition_57640ps_500ns",
+   "source_md5": "53e81764ec1b892c099ce988ea85914a",
+   "source_bytes": 81000603,
+   "gzip": true,
+   "stored_md5": "01d53d75ea83247564df368eda6a8123",
+   "stored_bytes": 16432893
+  },
+  {
+   "file": "COLVAR_CRY2_apo_03_transition_57640ps_500ns.gz",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/CRY2_apo_protcol/CRY2_apo_03_transition_57640ps_500ns/COLVAR_CRY2_apo_03_transition_57640ps_500ns",
+   "source_md5": "778b1e46b98a2a92a63b00109a938670",
+   "source_bytes": 16927317,
+   "gzip": true,
+   "stored_md5": "4098f37dc1daefb2cf56b3a2144854c4",
+   "stored_bytes": 5470907
+  },
+  {
+   "file": "md.mdp",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/CRY2_apo_protcol/CRY2_apo_03_transition_57640ps_500ns/md.mdp",
+   "source_md5": "02d0113a82b3eae365c09aa7427d812c",
+   "source_bytes": 2836,
+   "gzip": false,
+   "stored_md5": "02d0113a82b3eae365c09aa7427d812c",
+   "stored_bytes": 2836
+  },
+  {
+   "file": "plumed.dat",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/CRY2_apo_protcol/CRY2_apo_03_transition_57640ps_500ns/plumed.dat",
+   "source_md5": "058bcdbb5a7a9989c6179a98e77133ee",
+   "source_bytes": 387,
+   "gzip": false,
+   "stored_md5": "058bcdbb5a7a9989c6179a98e77133ee",
+   "stored_bytes": 387
+  },
+  {
+   "file": "plumed_restart.dat",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/CRY2_apo_protcol/CRY2_apo_03_transition_57640ps_500ns/plumed_restart.dat",
+   "source_md5": "146b5894ee7afd383febf1b6022aae11",
+   "source_bytes": 32,
+   "gzip": false,
+   "stored_md5": "146b5894ee7afd383febf1b6022aae11",
+   "stored_bytes": 32
+  },
+  {
+   "file": "posre.itp",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/CRY2_apo_protcol/CRY2_apo_03_transition_57640ps_500ns/posre.itp",
+   "source_md5": "ac90998e3d9f0c33b1482eb1b4f73d6f",
+   "source_bytes": 128241,
+   "gzip": false,
+   "stored_md5": "ac90998e3d9f0c33b1482eb1b4f73d6f",
+   "stored_bytes": 128241
+  },
+  {
+   "file": "topol.top.gz",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/CRY2_apo_protcol/CRY2_apo_03_transition_57640ps_500ns/topol.top",
+   "source_md5": "443f9ecc72ccf3832d3f01e5e6c882ad",
+   "source_bytes": 2311158,
+   "gzip": true,
+   "stored_md5": "ee2e36407c6f2c68ed3b1ae18ddab7cf",
+   "stored_bytes": 301965
+  },
+  {
+   "file": "start_start.gro.gz",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/CRY2_apo_protcol/CRY2_apo_03_transition_57640ps_500ns/start.gro",
+   "source_md5": "5946293316fd8b15df98083ba7e3d110",
+   "source_bytes": 3993588,
+   "gzip": true,
+   "stored_md5": "555e55a8fe115c9630e3f155361413c8",
+   "stored_bytes": 1134227,
+   "role": "production start: gatekeeper chi1/chi2 match the first COLVAR row within 0.01 rad (the small difference comes from .gro precision or from the constraint step at the start of mdrun)"
+  }
+ ]
+}

@@ -1,0 +1,137 @@
+{
+ "run": "simulations/CRY1_apo/staged1_OUT_seed_3980ps",
+ "system": "CRY1_apo",
+ "label": "Staged Run 1 (OUT seed, 3980 ps)",
+ "ligand": "none (apo)",
+ "source_folder": "F:/gpu03/Meta/CRY2_revision/GPU_revision/CRY1_apo_protcol/CRY1_apo_01_negative_3980ps_500ns",
+ "gatekeeper_torsion_atoms": {
+  "chi1": [
+   6376,
+   6378,
+   6380,
+   6383
+  ],
+  "chi2": [
+   6378,
+   6380,
+   6383,
+   6384
+  ]
+ },
+ "hills": {
+  "rows": 500000,
+  "t_first": 1.0,
+  "t_last": 500000.0,
+  "non_increasing_steps": 0,
+  "first_row": [
+   1.0,
+   3.087697544495562,
+   -1.292006661887478
+  ]
+ },
+ "colvar": {
+  "rows": 500002,
+  "t_first": 0.0,
+  "t_last": 500000.0,
+  "non_increasing_steps": 1,
+  "first_row": [
+   0.0,
+   2.792892,
+   -1.319407
+  ]
+ },
+ "colvar_t0_deg": [
+  0.0,
+  160.0209242358515,
+  -75.59645256001741
+ ],
+ "start_candidates": [
+  {
+   "file": "start.gro",
+   "title": "Protein in water t= 3980.00000 step= 1990000",
+   "atoms": 89676,
+   "velocities": false,
+   "chi1": 2.793184123261192,
+   "chi2": -1.3197010964947502,
+   "max_dchi_vs_colvar_t0": 0.0002940964947502067,
+   "match": "rounding"
+  }
+ ],
+ "start_identified": true,
+ "notes": "",
+ "files": [
+  {
+   "file": "HILLS_CRY1_apo_negative_500ns.gz",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/CRY1_apo_protcol/CRY1_apo_01_negative_3980ps_500ns/HILLS_CRY1_apo_negative_500ns",
+   "source_md5": "6dd9e775e0ab2696c4d1a01f141f2b5b",
+   "source_bytes": 81000402,
+   "gzip": true,
+   "stored_md5": "ff16e4376bc30e6828494b850813550b",
+   "stored_bytes": 16465772
+  },
+  {
+   "file": "COLVAR_CRY1_apo_negative_500ns.gz",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/CRY1_apo_protcol/CRY1_apo_01_negative_3980ps_500ns/COLVAR_CRY1_apo_negative_500ns",
+   "source_md5": "ea0d99d86ae9040f602d2707c61705ff",
+   "source_bytes": 16916572,
+   "gzip": true,
+   "stored_md5": "7bd1194058f40d6af3c313ba37565f67",
+   "stored_bytes": 5446125
+  },
+  {
+   "file": "md.mdp",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/CRY1_apo_protcol/CRY1_apo_01_negative_3980ps_500ns/md.mdp",
+   "source_md5": "1e8959f9205b9451e88c0c9e259c742a",
+   "source_bytes": 2845,
+   "gzip": false,
+   "stored_md5": "1e8959f9205b9451e88c0c9e259c742a",
+   "stored_bytes": 2845
+  },
+  {
+   "file": "plumed.dat",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/CRY1_apo_protcol/CRY1_apo_01_negative_3980ps_500ns/plumed.dat",
+   "source_md5": "b22a414aa041bc35d24aee700cd35594",
+   "source_bytes": 361,
+   "gzip": false,
+   "stored_md5": "b22a414aa041bc35d24aee700cd35594",
+   "stored_bytes": 361
+  },
+  {
+   "file": "plumed_optimized.dat",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/CRY1_apo_protcol/CRY1_apo_01_negative_3980ps_500ns/plumed_optimized.dat",
+   "source_md5": "fe7ea576520d1b88075acd59edceebd6",
+   "source_bytes": 511,
+   "gzip": false,
+   "stored_md5": "fe7ea576520d1b88075acd59edceebd6",
+   "stored_bytes": 511
+  },
+  {
+   "file": "posre.itp",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/CRY1_apo_protcol/CRY1_apo_01_negative_3980ps_500ns/posre.itp",
+   "source_md5": "8a2ecdc5c4f93bbf6ad7744a43f28068",
+   "source_bytes": 123653,
+   "gzip": false,
+   "stored_md5": "8a2ecdc5c4f93bbf6ad7744a43f28068",
+   "stored_bytes": 123653
+  },
+  {
+   "file": "topol.top.gz",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/CRY1_apo_protcol/CRY1_apo_01_negative_3980ps_500ns/topol.top",
+   "source_md5": "5542c7608e3a571d4b286595e8b0a0e5",
+   "source_bytes": 2240043,
+   "gzip": true,
+   "stored_md5": "3a0b8d81f9bdc4ba951485cd665d3d21",
+   "stored_bytes": 292089
+  },
+  {
+   "file": "start_start.gro.gz",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/CRY1_apo_protcol/CRY1_apo_01_negative_3980ps_500ns/start.gro",
+   "source_md5": "17c7c7a0527ee74821cb8c5927e0ab4d",
+   "source_bytes": 4035562,
+   "gzip": true,
+   "stored_md5": "65485137930130fafa321058613aeb5b",
+   "stored_bytes": 1146326,
+   "role": "production start: gatekeeper chi1/chi2 match the first COLVAR row within 0.01 rad (the small difference comes from .gro precision or from the constraint step at the start of mdrun)"
+  }
+ ]
+}

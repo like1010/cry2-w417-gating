@@ -1,0 +1,34 @@
+{
+ "stage": "CRY1_TH301_eq",
+ "source_folder": "F:/gpu03/Meta/CRY1/CRY1_TH301_eq",
+ "notes": "Staged seeding chain of CRY1-TH301.",
+ "files": [
+  {
+   "file": "COLVAR_equil.gz",
+   "source": "F:/gpu03/Meta/CRY1/CRY1_TH301_eq/COLVAR_equil",
+   "source_md5": "045d650974e4844840c35e35b3f1c0a6",
+   "source_bytes": 64694,
+   "gzip": true,
+   "stored_md5": "13a3614c71a20bcff0a7bd465d088685",
+   "stored_bytes": 20745
+  },
+  {
+   "file": "md.mdp",
+   "source": "F:/gpu03/Meta/CRY1/CRY1_TH301_eq/md.mdp",
+   "source_md5": "7e93e9b423d760552ff63b89d255cd1d",
+   "source_bytes": 2343,
+   "gzip": false,
+   "stored_md5": "7e93e9b423d760552ff63b89d255cd1d",
+   "stored_bytes": 2343
+  },
+  {
+   "file": "plumed.dat",
+   "source": "F:/gpu03/Meta/CRY1/CRY1_TH301_eq/plumed.dat",
+   "source_md5": "6a1eeddec0bcc8485432c94059132d3e",
+   "source_bytes": 384,
+   "gzip": false,
+   "stored_md5": "6a1eeddec0bcc8485432c94059132d3e",
+   "stored_bytes": 384
+  }
+ ]
+}

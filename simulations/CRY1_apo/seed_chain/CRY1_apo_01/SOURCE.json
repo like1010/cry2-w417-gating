@@ -1,0 +1,34 @@
+{
+ "stage": "CRY1_apo_01",
+ "source_folder": "F:/gpu03/Meta/CRY2_revision/GPU_revision/CRY1_apo_protcol/CRY1_apo_01",
+ "notes": "Staged seeding chain of apo CRY1.",
+ "files": [
+  {
+   "file": "COLVAR_01.gz",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/CRY1_apo_protcol/CRY1_apo_01/COLVAR_01",
+   "source_md5": "a80d03468246f66d6f55a648dddf9f1f",
+   "source_bytes": 328077,
+   "gzip": true,
+   "stored_md5": "c29fd7dd95e0fd838d55d1de9ffa42a6",
+   "stored_bytes": 108858
+  },
+  {
+   "file": "md.mdp",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/CRY1_apo_protcol/CRY1_apo_01/md.mdp",
+   "source_md5": "7203bbecebc0b781692f1a92fbde14e1",
+   "source_bytes": 2848,
+   "gzip": false,
+   "stored_md5": "7203bbecebc0b781692f1a92fbde14e1",
+   "stored_bytes": 2848
+  },
+  {
+   "file": "plumed_01.dat",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/CRY1_apo_protcol/CRY1_apo_01/plumed_01.dat",
+   "source_md5": "212dae18ed2cc3d61ddcc8c1f35548e2",
+   "source_bytes": 684,
+   "gzip": false,
+   "stored_md5": "212dae18ed2cc3d61ddcc8c1f35548e2",
+   "stored_bytes": 684
+  }
+ ]
+}

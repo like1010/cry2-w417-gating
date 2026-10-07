@@ -1,0 +1,21 @@
+UNITS LENGTH=A TIME=ps
+
+# CRY1 W399: chi1 = N-CA-CB-CG; chi2 = CA-CB-CG-CD1
+chi1: TORSION ATOMS=6376,6378,6380,6383
+chi2: TORSION ATOMS=6378,6380,6383,6384
+
+# Reload the complete 500 ns WT-MetaD bias; deposit no new hills.
+METAD ...
+  LABEL=metad
+  ARG=chi1,chi2
+  SIGMA=0.3,0.3
+  HEIGHT=0.0
+  PACE=10000000
+  BIASFACTOR=10
+  TEMP=300
+  FILE=HILLS_CRY1_apo_positive_500ns
+  RESTART=YES
+... METAD
+
+# One record for every frame supplied by plumed driver.
+PRINT ARG=chi1,chi2,metad.bias FILE=COLVAR_CRY1_apo_positive_500ns_REWEIGHT STRIDE=1

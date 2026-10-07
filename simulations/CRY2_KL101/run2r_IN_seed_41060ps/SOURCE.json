@@ -1,0 +1,155 @@
+{
+ "run": "simulations/CRY2_KL101/run2r_IN_seed_41060ps",
+ "system": "CRY2_KL101",
+ "label": "Run 2r (IN seed, 41060 ps)",
+ "ligand": "KL101 (KL101_GAFF2.itp; DiffDock pose)",
+ "source_folder": "F:/gpu03/Meta/CRY2_revision/GPU_revision/KL101_CRY2_protocol/KL_md_02r_41060ps_stage02",
+ "gatekeeper_torsion_atoms": {
+  "chi1": [
+   6384,
+   6386,
+   6388,
+   6391
+  ],
+  "chi2": [
+   6386,
+   6388,
+   6391,
+   6392
+  ]
+ },
+ "hills": {
+  "rows": 500000,
+  "t_first": 1.0,
+  "t_last": 500000.0,
+  "non_increasing_steps": 0,
+  "first_row": [
+   1.0,
+   -3.062472434828047,
+   1.641998174322912
+  ]
+ },
+ "colvar": {
+  "rows": 500001,
+  "t_first": 0.0,
+  "t_last": 500000.0,
+  "non_increasing_steps": 0,
+  "first_row": [
+   0.0,
+   -2.851071,
+   1.650766
+  ]
+ },
+ "colvar_t0_deg": [
+  0.0,
+  -163.35433539214313,
+  94.58192476369285
+ ],
+ "start_candidates": [
+  {
+   "file": "KL_md_02r_41060ps.gro",
+   "title": "CRY2-KL101: amber99sb-ildn protein + GAFF2 ligand + TIP3P in water t= 41060.00000 step= 20530000",
+   "atoms": 78922,
+   "velocities": false,
+   "chi1": -2.851131290851554,
+   "chi2": 1.6505315710168158,
+   "max_dchi_vs_colvar_t0": 0.0002344289831839319,
+   "match": "rounding"
+  }
+ ],
+ "start_identified": true,
+ "notes": "",
+ "files": [
+  {
+   "file": "HILLS_KL_md_02r_41060ps_stage02_500ns.gz",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/KL101_CRY2_protocol/KL_md_02r_41060ps_stage02/HILLS_KL_md_02r_41060ps_stage02_500ns",
+   "source_md5": "4f8b9641f32f1fb5bea52d5c3d8be796",
+   "source_bytes": 81000201,
+   "gzip": true,
+   "stored_md5": "45e31116b9593462d8c1c4e363d3309a",
+   "stored_bytes": 16464614
+  },
+  {
+   "file": "COLVAR_KL_md_02r_41060ps_stage02_500ns.gz",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/KL101_CRY2_protocol/KL_md_02r_41060ps_stage02/COLVAR_KL_md_02r_41060ps_stage02_500ns",
+   "source_md5": "31fea74323745b6c542cbec3e10103f3",
+   "source_bytes": 16897330,
+   "gzip": true,
+   "stored_md5": "13a79f48fc37b1dd06e8a9bd6dd2ae66",
+   "stored_bytes": 5491146
+  },
+  {
+   "file": "KL101_GAFF2.itp",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/KL101_CRY2_protocol/KL_md_02r_41060ps_stage02/KL101_GAFF2.itp",
+   "source_md5": "c888750455938b408c250a0c48ff2de7",
+   "source_bytes": 23124,
+   "gzip": false,
+   "stored_md5": "c888750455938b408c250a0c48ff2de7",
+   "stored_bytes": 23124
+  },
+  {
+   "file": "ligand_atomtypes.itp",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/KL101_CRY2_protocol/KL_md_02r_41060ps_stage02/ligand_atomtypes.itp",
+   "source_md5": "4c2573a1db134a907fba8e89f6c2816d",
+   "source_bytes": 1158,
+   "gzip": false,
+   "stored_md5": "4c2573a1db134a907fba8e89f6c2816d",
+   "stored_bytes": 1158
+  },
+  {
+   "file": "md.mdp",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/KL101_CRY2_protocol/KL_md_02r_41060ps_stage02/md.mdp",
+   "source_md5": "a25bbc8105b23554bc5ed04934d09769",
+   "source_bytes": 2942,
+   "gzip": false,
+   "stored_md5": "a25bbc8105b23554bc5ed04934d09769",
+   "stored_bytes": 2942
+  },
+  {
+   "file": "plumed.dat",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/KL101_CRY2_protocol/KL_md_02r_41060ps_stage02/plumed.dat",
+   "source_md5": "0b874c475833ed9ea6df6c8ec7eefb3f",
+   "source_bytes": 488,
+   "gzip": false,
+   "stored_md5": "0b874c475833ed9ea6df6c8ec7eefb3f",
+   "stored_bytes": 488
+  },
+  {
+   "file": "posre_LIG.itp",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/KL101_CRY2_protocol/KL_md_02r_41060ps_stage02/posre_LIG.itp",
+   "source_md5": "ab581888ec0176e49ed5a3d23e7bf090",
+   "source_bytes": 576,
+   "gzip": false,
+   "stored_md5": "ab581888ec0176e49ed5a3d23e7bf090",
+   "stored_bytes": 576
+  },
+  {
+   "file": "posre_protein.itp",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/KL101_CRY2_protocol/KL_md_02r_41060ps_stage02/posre_protein.itp",
+   "source_md5": "4aba345568d6a4a5ef2cc37cd0fb4e8a",
+   "source_bytes": 128241,
+   "gzip": false,
+   "stored_md5": "4aba345568d6a4a5ef2cc37cd0fb4e8a",
+   "stored_bytes": 128241
+  },
+  {
+   "file": "topol.top.gz",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/KL101_CRY2_protocol/KL_md_02r_41060ps_stage02/topol.top",
+   "source_md5": "b37dc09832ea2482385246a850601e08",
+   "source_bytes": 2311368,
+   "gzip": true,
+   "stored_md5": "783ea26b15c16db65a9ee722af2ad2d8",
+   "stored_bytes": 302087
+  },
+  {
+   "file": "start_KL_md_02r_41060ps.gro.gz",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/KL101_CRY2_protocol/KL_md_02r_41060ps_stage02/KL_md_02r_41060ps.gro",
+   "source_md5": "c17bdba3123728e7ceaf1e1f2ecd70fd",
+   "source_bytes": 3551684,
+   "gzip": true,
+   "stored_md5": "4c2f4f8a634034b7a32c3a4654811d36",
+   "stored_bytes": 1007456,
+   "role": "production start: gatekeeper chi1/chi2 match the first COLVAR row within 0.01 rad (the small difference comes from .gro precision or from the constraint step at the start of mdrun)"
+  }
+ ]
+}

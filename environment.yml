@@ -1,0 +1,11 @@
+# Analysis environment. The MD itself used GROMACS 2024 / 2024.2 patched with
+# PLUMED 2.9.2, installed separately. Analysis/tp_reweighting needs numpy and pandas only.
+name: cry2-w417
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12.7
+  - numpy
+  - pandas
+  - scipy
+  - matplotlib

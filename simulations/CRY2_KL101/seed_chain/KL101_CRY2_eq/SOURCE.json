@@ -1,0 +1,34 @@
+{
+ "stage": "KL101_CRY2_eq",
+ "source_folder": "F:/gpu03/Meta/CRY2_revision/GPU_revision/KL101_CRY2_protocol/KL101_CRY2_eq",
+ "notes": "Staged seeding chain of KL101-CRY2.",
+ "files": [
+  {
+   "file": "COLVAR_equil.gz",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/KL101_CRY2_protocol/KL101_CRY2_eq/COLVAR_equil",
+   "source_md5": "d03051cde5c1a89cdc72202d9943b21d",
+   "source_bytes": 64403,
+   "gzip": true,
+   "stored_md5": "cbc55d23f9231f6b9054369c0a8cbd67",
+   "stored_bytes": 20905
+  },
+  {
+   "file": "md_eq.mdp",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/KL101_CRY2_protocol/KL101_CRY2_eq/md_eq.mdp",
+   "source_md5": "b0d1ea4d1af0db22217379d5b4dd27f9",
+   "source_bytes": 2322,
+   "gzip": false,
+   "stored_md5": "b0d1ea4d1af0db22217379d5b4dd27f9",
+   "stored_bytes": 2322
+  },
+  {
+   "file": "plumed_eq.dat",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/KL101_CRY2_protocol/KL101_CRY2_eq/plumed_eq.dat",
+   "source_md5": "519328de0ab0f05a36ea169a3b3c78ed",
+   "source_bytes": 334,
+   "gzip": false,
+   "stored_md5": "519328de0ab0f05a36ea169a3b3c78ed",
+   "stored_bytes": 334
+  }
+ ]
+}

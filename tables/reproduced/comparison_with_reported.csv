@@ -1,0 +1,23 @@
+run_folder,reported_dG,reproduced_dG,difference,reported_SE,reproduced_SE,frame_spacing_ps,note
+simulations/CRY2_apo/staged1_OUT_seed_4040ps,+0.625,+0.625,+0.000,0.717,0.717,1,"per_run_TP_apo_CRY1_validation_jackknife.csv: Apo CRY2, staged runs / Run 1 (negative-chi2 seed)"
+simulations/CRY2_apo/staged2_transition_seed_57640ps,-0.095,-0.095,+0.000,0.217,0.217,1,"per_run_TP_apo_CRY1_validation_jackknife.csv: Apo CRY2, staged runs / Run 2 (near-zero chi2 seed)"
+simulations/CRY2_apo/staged3_IN_seed_80480ps,+0.832,+0.832,+0.000,1.132,1.131,1,"per_run_TP_apo_CRY1_validation_jackknife.csv: Apo CRY2, staged runs / Run 3 (positive-chi2 seed)"
+simulations/CRY2_apo/unstaged_IN_cMD_455760ps,+0.737,+0.737,+0.000,0.330,0.330,1,"per_run_TP_apo_CRY1_validation_jackknife.csv: Apo CRY2, unstaged runs / Run from an in frame (455.76 ns)"
+simulations/CRY2_apo/unstaged_OUT_cMD_201820ps,-2.202,-2.202,-0.000,0.567,0.567,1,"per_run_TP_apo_CRY1_validation_jackknife.csv: Apo CRY2, unstaged runs / Run from an out frame (201.82 ns)"
+simulations/CRY2_apo/earlier_single_run,-0.581,-0.577,+0.004,0.913,0.910,1,"per_run_TP_apo_CRY1_validation_jackknife.csv: Apo CRY2, unstaged runs / Single run of the original submission"
+simulations/CRY1_TH301/primary1_IN_seed_2530ps,-1.741,-1.736,+0.005,0.544,0.527,10,per_run_TP_apo_CRY1_validation_jackknife.csv: CRY1-TH301 primary set / Run 1 (positive-chi2 seed)
+simulations/CRY1_TH301/primary2_transition_seed_24710ps,-0.737,-0.735,+0.002,0.438,0.438,10,per_run_TP_apo_CRY1_validation_jackknife.csv: CRY1-TH301 primary set / Run 2 (near-zero chi2 seed)
+simulations/CRY1_TH301/primary3_OUT_seed_113160ps,-0.534,-0.533,+0.001,0.183,0.181,10,per_run_TP_apo_CRY1_validation_jackknife.csv: CRY1-TH301 primary set / Run 3 (negative-chi2 seed)
+simulations/CRY1_TH301/validation1_transition_seed_93110ps,-1.789,-1.789,-0.000,0.554,0.553,1,per_run_TP_apo_CRY1_validation_jackknife.csv: CRY1-TH301 second seed set / Run 1 (near-zero chi2 seed)
+simulations/CRY1_TH301/validation2_OUT_seed_66070ps,-0.649,-0.649,-0.000,0.143,0.143,1,per_run_TP_apo_CRY1_validation_jackknife.csv: CRY1-TH301 second seed set / Run 2 (negative-chi2 seed)
+simulations/CRY1_TH301/validation3_IN_seed_166600ps,-1.006,-1.006,-0.000,0.165,0.165,1,per_run_TP_apo_CRY1_validation_jackknife.csv: CRY1-TH301 second seed set / Run 3 (positive-chi2 seed)
+simulations/CRY1_apo/staged1_OUT_seed_3980ps,-0.433,-0.433,-0.000,0.637,0.637,1,"per_run_TP_apo_CRY1_validation_jackknife.csv: Apo CRY1, staged runs / Run 1 (negative-chi2 seed)"
+simulations/CRY1_apo/staged2_transition_seed_20060ps,+0.831,+0.831,-0.000,0.180,0.180,1,"per_run_TP_apo_CRY1_validation_jackknife.csv: Apo CRY1, staged runs / Run 2 (near-zero chi2 seed)"
+simulations/CRY1_apo/staged3_IN_seed_79690ps,+0.340,+0.340,+0.000,0.530,0.530,1,"per_run_TP_apo_CRY1_validation_jackknife.csv: Apo CRY1, staged runs / Run 3 (positive-chi2 seed)"
+simulations/CRY1_apo/earlier_single_run,+0.364,+0.360,-0.004,0.639,0.638,10,"per_run_TP_apo_CRY1_validation_jackknife.csv: Apo CRY1, single run without a staged chain / single run"
+simulations/CRY2_TH301/run1_OUT_seed_960ps,+0.734,+0.734,+0.000,0.460,0.460,1,"per_run_TP_CRY2_TH301_57atom.csv: Run 1 (OUT seed, 960 ps)"
+simulations/CRY2_TH301/run2_transition_seed_11550ps,+0.620,+0.620,+0.000,0.657,0.657,1,"per_run_TP_CRY2_TH301_57atom.csv: Run 2 (transition seed, 11550 ps)"
+simulations/CRY2_TH301/run3_IN_seed_13870ps,-0.712,-0.712,+0.000,1.424,1.424,1,"per_run_TP_CRY2_TH301_57atom.csv: Run 3 (IN seed, 13870 ps)"
+simulations/CRY2_KL101/run1_OUT_seed_570ps,-0.323,-0.323,-0.000,0.717,0.717,1,"per_run_KL101_CRY2.csv: Run 1 (570 ps, OUT seed from KL101_CRY2_01, as selected)"
+simulations/CRY2_KL101/run2r_IN_seed_41060ps,+0.112,+0.112,+0.000,0.617,0.617,1,"per_run_KL101_CRY2.csv: Run 2r (41060 ps, IN seed from KL101_CRY2_02, as selected)"
+simulations/CRY2_KL101/run3r_transition_seed_93060ps,+0.174,+0.174,-0.000,0.592,0.592,1,"per_run_KL101_CRY2.csv: Run 3r (93060 ps, transition seed from KL101_CRY2_03, as selected)"

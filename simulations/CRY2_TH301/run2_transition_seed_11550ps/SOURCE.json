@@ -1,0 +1,261 @@
+{
+ "run": "simulations/CRY2_TH301/run2_transition_seed_11550ps",
+ "system": "CRY2_TH301",
+ "label": "Run 2 (transition seed, 11550 ps)",
+ "ligand": "TH301, 57-atom cyclopentane (DYX_smiles_GMX.itp, md5 38fe05ce...)",
+ "source_folder": "F:/gpu03/Meta/CRY2_revision/GPU_revision/seed02_11550ps",
+ "gatekeeper_torsion_atoms": {
+  "chi1": [
+   6384,
+   6386,
+   6388,
+   6391
+  ],
+  "chi2": [
+   6386,
+   6388,
+   6391,
+   6392
+  ]
+ },
+ "hills": {
+  "rows": 500000,
+  "t_first": 1.0,
+  "t_last": 500000.0,
+  "non_increasing_steps": 0,
+  "first_row": [
+   1.0,
+   -2.838570649379069,
+   1.019751900531899
+  ]
+ },
+ "colvar": {
+  "rows": 500001,
+  "t_first": 0.0,
+  "t_last": 500000.0,
+  "non_increasing_steps": 0,
+  "first_row": [
+   0.0,
+   -2.039109,
+   0.102244
+  ]
+ },
+ "colvar_t0_deg": [
+  0.0,
+  -116.83233966714177,
+  5.858149680535589
+ ],
+ "start_candidates": [
+  {
+   "file": "em2.gro",
+   "title": "CRY2_TH301 in water",
+   "atoms": 148893,
+   "velocities": false,
+   "chi1": -2.039559060666935,
+   "chi2": 0.10252360633606951,
+   "max_dchi_vs_colvar_t0": 0.00045006066693531466,
+   "match": "rounding"
+  }
+ ],
+ "start_identified": true,
+ "notes": "em1 and em2 with W417 chi1/chi2 restrained to the seed values (topol.top #ifdef DIHRES_W417, -DDIHRES_W417 in em1.mdp/em2.mdp); no NVT/NPT; 500 ns WT-MetaD started from em2.gro with new 300 K velocities (wtmd_from_em.mdp: continuation = no, gen_vel = yes, gen_seed = -1) and plumed_from_em.dat. nvt.mdp/npt.mdp/md.mdp/plumed.dat in this folder belong to the planned route that was not used.",
+ "files": [
+  {
+   "file": "HILLS_WTMD_from_EM.gz",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/seed02_11550ps/HILLS_WTMD_from_EM",
+   "source_md5": "850d73b110a4181d22bde6d12d47f37d",
+   "source_bytes": 81000603,
+   "gzip": true,
+   "stored_md5": "f64e6559add1add884493680cf0ed124",
+   "stored_bytes": 16440808
+  },
+  {
+   "file": "COLVAR_WTMD_from_EM.gz",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/seed02_11550ps/COLVAR_WTMD_from_EM",
+   "source_md5": "ba2b801caec6ddb3b9f74120362ed6d4",
+   "source_bytes": 16992470,
+   "gzip": true,
+   "stored_md5": "22dbbea733328b77a5de94f77ff8eead",
+   "stored_bytes": 5481077
+  },
+  {
+   "file": "DYX_smiles_GMX.itp",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/seed02_11550ps/DYX_smiles_GMX.itp",
+   "source_md5": "38fe05ce2536d102feae61234dd1ebd7",
+   "source_bytes": 42457,
+   "gzip": false,
+   "stored_md5": "38fe05ce2536d102feae61234dd1ebd7",
+   "stored_bytes": 42457
+  },
+  {
+   "file": "em1.mdp",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/seed02_11550ps/em1.mdp",
+   "source_md5": "d95da42783a2fcde7ae7470a9a2d2c6d",
+   "source_bytes": 1543,
+   "gzip": false,
+   "stored_md5": "d07b2c40ae32a0f2084eaa6dc55b1e95",
+   "stored_bytes": 1393,
+   "edited": "comment lines only; parameters unchanged",
+   "edited_content_md5": "d07b2c40ae32a0f2084eaa6dc55b1e95"
+  },
+  {
+   "file": "em2.mdp",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/seed02_11550ps/em2.mdp",
+   "source_md5": "1ffb2cd1b4c9f170a6f6d4fbf382b8a5",
+   "source_bytes": 1467,
+   "gzip": false,
+   "stored_md5": "3155e8d43b718a03b2ba8a196e751821",
+   "stored_bytes": 1317,
+   "edited": "comment lines only; parameters unchanged",
+   "edited_content_md5": "3155e8d43b718a03b2ba8a196e751821"
+  },
+  {
+   "file": "md.mdp",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/seed02_11550ps/md.mdp",
+   "source_md5": "ea7332aa68a58ee8ab5d021ab6ff34b6",
+   "source_bytes": 2838,
+   "gzip": false,
+   "stored_md5": "ea7332aa68a58ee8ab5d021ab6ff34b6",
+   "stored_bytes": 2838
+  },
+  {
+   "file": "npt.mdp",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/seed02_11550ps/npt.mdp",
+   "source_md5": "66b7f5706f5040335e3455341d899521",
+   "source_bytes": 3146,
+   "gzip": false,
+   "stored_md5": "d972f070b84991acca6cb252f4975300",
+   "stored_bytes": 2904,
+   "edited": "comment lines only; parameters unchanged",
+   "edited_content_md5": "d972f070b84991acca6cb252f4975300"
+  },
+  {
+   "file": "nvt.mdp",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/seed02_11550ps/nvt.mdp",
+   "source_md5": "de31bc54e3a8f259063a31952e4963aa",
+   "source_bytes": 2931,
+   "gzip": false,
+   "stored_md5": "43eecef69da533d2ae911abef11c2014",
+   "stored_bytes": 2674,
+   "edited": "comment lines only; parameters unchanged",
+   "edited_content_md5": "43eecef69da533d2ae911abef11c2014"
+  },
+  {
+   "file": "plumed.dat",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/seed02_11550ps/plumed.dat",
+   "source_md5": "0832f680467f5499636f9addc290ff3d",
+   "source_bytes": 581,
+   "gzip": false,
+   "stored_md5": "bcb9503c7bec86723e0629d908939bfe",
+   "stored_bytes": 513,
+   "edited": "comment lines only; parameters unchanged",
+   "edited_content_md5": "bcb9503c7bec86723e0629d908939bfe"
+  },
+  {
+   "file": "plumed_from_em.dat",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/seed02_11550ps/plumed_from_em.dat",
+   "source_md5": "a2d303e40c36a8b9d10a3ce7920da4c9",
+   "source_bytes": 559,
+   "gzip": false,
+   "stored_md5": "8c2e1cc3a278ffdfec85710d4d1b5625",
+   "stored_bytes": 491,
+   "edited": "comment lines only; parameters unchanged",
+   "edited_content_md5": "8c2e1cc3a278ffdfec85710d4d1b5625"
+  },
+  {
+   "file": "plumed_restart_12t.dat",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/seed02_11550ps/plumed_restart_12t.dat",
+   "source_md5": "d1dcd95c5f0c7e7d7a7300918ac2ede5",
+   "source_bytes": 567,
+   "gzip": false,
+   "stored_md5": "58a66a6a6287053c3c95fc0064a9f8a6",
+   "stored_bytes": 499,
+   "edited": "comment lines only; parameters unchanged",
+   "edited_content_md5": "58a66a6a6287053c3c95fc0064a9f8a6"
+  },
+  {
+   "file": "plumed_restart_6t.dat",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/seed02_11550ps/plumed_restart_6t.dat",
+   "source_md5": "d1dcd95c5f0c7e7d7a7300918ac2ede5",
+   "source_bytes": 567,
+   "gzip": false,
+   "stored_md5": "58a66a6a6287053c3c95fc0064a9f8a6",
+   "stored_bytes": 499,
+   "edited": "comment lines only; parameters unchanged",
+   "edited_content_md5": "58a66a6a6287053c3c95fc0064a9f8a6"
+  },
+  {
+   "file": "posre.itp",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/seed02_11550ps/posre.itp",
+   "source_md5": "ac90998e3d9f0c33b1482eb1b4f73d6f",
+   "source_bytes": 128241,
+   "gzip": false,
+   "stored_md5": "ac90998e3d9f0c33b1482eb1b4f73d6f",
+   "stored_bytes": 128241
+  },
+  {
+   "file": "posre_DYX_smiles.itp",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/seed02_11550ps/posre_DYX_smiles.itp",
+   "source_md5": "c06c006c8f1eaca4a7ccf963bae7ad22",
+   "source_bytes": 1516,
+   "gzip": false,
+   "stored_md5": "390765baab34f0e27e68935956ea28b9",
+   "stored_bytes": 1438,
+   "edited": "comment lines only; parameters unchanged",
+   "edited_content_md5": "390765baab34f0e27e68935956ea28b9"
+  },
+  {
+   "file": "posre_DYX_smiles_ringfree.itp",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/seed02_11550ps/posre_DYX_smiles_ringfree.itp",
+   "source_md5": "4bb833441bb52fca29783536b5984ce5",
+   "source_bytes": 1406,
+   "gzip": false,
+   "stored_md5": "e0bd40d8174e67c3fe1bc678fe309d4f",
+   "stored_bytes": 1328,
+   "edited": "comment lines only; parameters unchanged",
+   "edited_content_md5": "e0bd40d8174e67c3fe1bc678fe309d4f"
+  },
+  {
+   "file": "topol.top.gz",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/seed02_11550ps/topol.top",
+   "source_md5": "ba311bce95ba1c8e0d7a2194bdfb809c",
+   "source_bytes": 2311694,
+   "gzip": true,
+   "stored_md5": "3d350918374865f3679e4c6f55a819a5",
+   "stored_bytes": 302349,
+   "edited": "comment lines only; parameters unchanged",
+   "edited_content_md5": "7ed6f78de7f2f69fc20ae56767f579c1"
+  },
+  {
+   "file": "wtmd_from_em.mdp",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/seed02_11550ps/wtmd_from_em.mdp",
+   "source_md5": "8e852b24b6c7ca53d37ded40648c8765",
+   "source_bytes": 2873,
+   "gzip": false,
+   "stored_md5": "8e852b24b6c7ca53d37ded40648c8765",
+   "stored_bytes": 2873
+  },
+  {
+   "file": "start_em2.gro.gz",
+   "source": "F:/gpu03/Meta/CRY2_revision/GPU_revision/seed02_11550ps/em2.gro",
+   "source_md5": "f91e4edcdf6520f59c9c12b1a6a5f293",
+   "source_bytes": 6700243,
+   "gzip": true,
+   "stored_md5": "995549fbb662fb1e85eaa0eed7961e78",
+   "stored_bytes": 1908153,
+   "role": "production start: gatekeeper chi1/chi2 match the first COLVAR row within 0.01 rad (the small difference comes from .gro precision or from the constraint step at the start of mdrun)"
+  },
+  {
+   "file": "seed_CRY2_TH301_57atom_primary2_11550ps.gro.gz",
+   "source": "F:/gpu03/Meta/CRY2_revision/build_kits/CRY2_TH301_seeds_all6_57atom_2026-10-07/gro/CRY2_TH301_57atom_primary2_11550ps.gro",
+   "source_md5": "8f3a350e60425756b13719fd48e022fa",
+   "source_bytes": 6700311,
+   "gzip": true,
+   "stored_md5": "b07f90f2502e5ef12caa986e84b9840f",
+   "stored_bytes": 1909513,
+   "role": "seed frame selected from the staged chain",
+   "edited": "comment lines only; parameters unchanged",
+   "edited_content_md5": "ff37cccaddaefe3fb3dde662886f70e9"
+  }
+ ]
+}

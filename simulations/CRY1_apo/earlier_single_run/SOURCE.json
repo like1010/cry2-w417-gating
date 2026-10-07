@@ -1,0 +1,128 @@
+{
+ "run": "simulations/CRY1_apo/earlier_single_run",
+ "system": "CRY1_apo",
+ "label": "Earlier single run (original submission)",
+ "ligand": "none (apo)",
+ "source_folder": "F:/gpu03/Meta/CRY1/CRY1_apo/CRY1_apo_W399_correct_metad_500ns",
+ "gatekeeper_torsion_atoms": {
+  "chi1": [
+   6093,
+   6095,
+   6097,
+   6100
+  ],
+  "chi2": [
+   6095,
+   6097,
+   6100,
+   6101
+  ]
+ },
+ "hills": {
+  "rows": 500000,
+  "t_first": 1.0,
+  "t_last": 500000.0,
+  "non_increasing_steps": 0,
+  "first_row": [
+   1.0,
+   -2.971806298299982,
+   -1.236332303246612
+  ]
+ },
+ "colvar": {
+  "rows": 500001,
+  "t_first": 0.0,
+  "t_last": 500000.0,
+  "non_increasing_steps": 0,
+  "first_row": [
+   0.0,
+   3.132813,
+   -1.303087
+  ]
+ },
+ "colvar_t0_deg": [
+  0.0,
+  179.49696290371799,
+  -74.66138543836391
+ ],
+ "start_candidates": [
+  {
+   "file": "npt.gro",
+   "title": "CRYSTAL STRUCTURE OF MOUSE CRYPTOCHROME 1 APO FORM in water",
+   "atoms": 150424,
+   "velocities": true,
+   "chi1": 3.1306103911470657,
+   "chi2": -1.2992453475744028,
+   "max_dchi_vs_colvar_t0": 0.0038416524255975304,
+   "match": "rounding"
+  }
+ ],
+ "start_identified": true,
+ "notes": "",
+ "files": [
+  {
+   "file": "HILLS_CRY1_apo.gz",
+   "source": "F:/gpu03/Meta/CRY1/CRY1_apo/CRY1_apo_W399_correct_metad_500ns/HILLS_CRY1_apo",
+   "source_md5": "9312a25e6e315d304cfe7f8f788cd3d4",
+   "source_bytes": 81000201,
+   "gzip": true,
+   "stored_md5": "88fa8dafadf2cba3704b32015a076732",
+   "stored_bytes": 16381751
+  },
+  {
+   "file": "COLVAR_CRY1_apo.gz",
+   "source": "F:/gpu03/Meta/CRY1/CRY1_apo/CRY1_apo_W399_correct_metad_500ns/COLVAR_CRY1_apo",
+   "source_md5": "49a46516ca9af2c566894ebfc578d961",
+   "source_bytes": 16957595,
+   "gzip": true,
+   "stored_md5": "9363dd4c16f066e8dec98181f1fe19ab",
+   "stored_bytes": 5454394
+  },
+  {
+   "file": "metad.mdp",
+   "source": "F:/gpu03/Meta/CRY1/CRY1_apo/CRY1_apo_W399_correct_metad_500ns/metad.mdp",
+   "source_md5": "60bee09c9945b0be61f2d5671b30a288",
+   "source_bytes": 1384,
+   "gzip": false,
+   "stored_md5": "60bee09c9945b0be61f2d5671b30a288",
+   "stored_bytes": 1384
+  },
+  {
+   "file": "plumed.dat",
+   "source": "F:/gpu03/Meta/CRY1/CRY1_apo/CRY1_apo_W399_correct_metad_500ns/plumed.dat",
+   "source_md5": "f89638aaefcd4ea298ef87382b71d0f0",
+   "source_bytes": 388,
+   "gzip": false,
+   "stored_md5": "f89638aaefcd4ea298ef87382b71d0f0",
+   "stored_bytes": 388
+  },
+  {
+   "file": "plumed_reweight.dat",
+   "source": "F:/gpu03/Meta/CRY1/CRY1_apo/CRY1_apo_W399_correct_metad_500ns/plumed_reweight.dat",
+   "source_md5": "347a8bad6d39774bb17a7e00e5bf8ae1",
+   "source_bytes": 482,
+   "gzip": false,
+   "stored_md5": "347a8bad6d39774bb17a7e00e5bf8ae1",
+   "stored_bytes": 482
+  },
+  {
+   "file": "topol.top.gz",
+   "source": "F:/gpu03/Meta/CRY1/CRY1_apo/CRY1_apo_W399_correct_metad_500ns/topol.top",
+   "source_md5": "a13087344dedca9e9b09d391fb392ca1",
+   "source_bytes": 2158276,
+   "gzip": true,
+   "stored_md5": "533e76e506768d62400a6caa828a7e65",
+   "stored_bytes": 279932
+  },
+  {
+   "file": "start_npt.gro.gz",
+   "source": "F:/gpu03/Meta/CRY1/CRY1_apo/CRY1_apo_W399_correct_metad_500ns/npt.gro",
+   "source_md5": "88d48ccb054517a9e128b6c6bb7960c5",
+   "source_bytes": 10379354,
+   "gzip": true,
+   "stored_md5": "4ab1ca5048cd2906f36e5c1b0e4a9983",
+   "stored_bytes": 3374504,
+   "role": "production start: gatekeeper chi1/chi2 match the first COLVAR row within 0.01 rad (the small difference comes from .gro precision or from the constraint step at the start of mdrun)"
+  }
+ ]
+}

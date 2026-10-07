@@ -1,0 +1,20 @@
+; DYX_smiles_GMX.top created by acpype (v: 2022.7.21) on Tue May 12 23:46:03 2026
+
+[ defaults ]
+; nbfunc        comb-rule       gen-pairs       fudgeLJ fudgeQQ
+1               2               yes             0.5     0.8333333333
+
+; Include DYX_smiles_GMX.itp topology
+#include "DYX_smiles_GMX.itp"
+
+; Ligand position restraints
+#ifdef POSRES_LIG
+#include "posre_DYX_smiles.itp"
+#endif
+
+[ system ]
+ DYX_smiles
+
+[ molecules ]
+; Compound        nmols
+ DYX_smiles       1     

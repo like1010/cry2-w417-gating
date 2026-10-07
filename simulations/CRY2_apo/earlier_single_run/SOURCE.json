@@ -1,0 +1,119 @@
+{
+ "run": "simulations/CRY2_apo/earlier_single_run",
+ "system": "CRY2_apo",
+ "label": "Earlier single run (original submission)",
+ "ligand": "none (apo)",
+ "source_folder": "F:/gpu03/Meta/CRY_apo_500ns_and_meta/meta",
+ "gatekeeper_torsion_atoms": {
+  "chi1": [
+   6384,
+   6386,
+   6388,
+   6391
+  ],
+  "chi2": [
+   6386,
+   6388,
+   6391,
+   6392
+  ]
+ },
+ "hills": {
+  "rows": 500000,
+  "t_first": 1.0,
+  "t_last": 500000.0,
+  "non_increasing_steps": 0,
+  "first_row": [
+   1.0,
+   3.0936329848803,
+   -1.109809087051716
+  ]
+ },
+ "colvar": {
+  "rows": 500001,
+  "t_first": 0.0,
+  "t_last": 500000.0,
+  "non_increasing_steps": 0,
+  "first_row": [
+   0.0,
+   -2.943649,
+   -1.223352
+  ]
+ },
+ "colvar_t0_deg": [
+  0.0,
+  -168.65866406790528,
+  -70.09290645888828
+ ],
+ "start_candidates": [
+  {
+   "file": "npt.gro",
+   "title": "CRY2_TH301 in water",
+   "atoms": 112374,
+   "velocities": true,
+   "chi1": -2.943652925816481,
+   "chi2": -1.223354897535163,
+   "max_dchi_vs_colvar_t0": 3.925816480787603e-06,
+   "match": "exact"
+  }
+ ],
+ "start_identified": true,
+ "notes": "",
+ "files": [
+  {
+   "file": "HILLS_apo.gz",
+   "source": "F:/gpu03/Meta/CRY_apo_500ns_and_meta/meta/HILLS_apo",
+   "source_md5": "15a0d1652da8284c7aace7a81d6ecc2b",
+   "source_bytes": 81000201,
+   "gzip": true,
+   "stored_md5": "88e6299a3956d20ded83139799a0e1fe",
+   "stored_bytes": 16364953
+  },
+  {
+   "file": "COLVAR_apo.gz",
+   "source": "F:/gpu03/Meta/CRY_apo_500ns_and_meta/meta/COLVAR_apo",
+   "source_md5": "88077a94b13b8260f053ce02cdab2a42",
+   "source_bytes": 16931709,
+   "gzip": true,
+   "stored_md5": "450b1914f930f1159caf831c4b0317fb",
+   "stored_bytes": 5403333
+  },
+  {
+   "file": "md.mdp",
+   "source": "F:/gpu03/Meta/CRY_apo_500ns_and_meta/meta/md.mdp",
+   "source_md5": "27a8eecb54d76b7a96fd0c587a874890",
+   "source_bytes": 2839,
+   "gzip": false,
+   "stored_md5": "27a8eecb54d76b7a96fd0c587a874890",
+   "stored_bytes": 2839
+  },
+  {
+   "file": "plumed.dat",
+   "source": "F:/gpu03/Meta/CRY_apo_500ns_and_meta/meta/plumed.dat",
+   "source_md5": "f80fbdcc0edf7be4bdf3184ce7ee49db",
+   "source_bytes": 344,
+   "gzip": false,
+   "stored_md5": "f80fbdcc0edf7be4bdf3184ce7ee49db",
+   "stored_bytes": 344
+  },
+  {
+   "file": "topol.top.gz",
+   "source": "F:/gpu03/Meta/CRY_apo_500ns_and_meta/meta/topol.top",
+   "source_md5": "109ad8fcc9c5f434b58fe4c7f7623c34",
+   "source_bytes": 2310929,
+   "gzip": true,
+   "stored_md5": "0eee00a58270112a7c5e37009f160617",
+   "stored_bytes": 301896
+  },
+  {
+   "file": "start_npt.gro.gz",
+   "source": "F:/gpu03/Meta/CRY_apo_500ns_and_meta/meta/npt.gro",
+   "source_md5": "13655fc939880f65ed6147c951224307",
+   "source_bytes": 7753864,
+   "gzip": true,
+   "stored_md5": "22e82ea038a6a3b0a32dcfad2247a624",
+   "stored_bytes": 2516677,
+   "role": "production start: coordinates equal the first COLVAR row (|dchi| < 1e-4 rad)"
+  }
+ ]
+}

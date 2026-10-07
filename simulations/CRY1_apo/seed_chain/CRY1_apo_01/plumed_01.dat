@@ -1,0 +1,27 @@
+UNITS LENGTH=A TIME=ps
+
+# W399 chi1 = N-CA-CB-CG, chi2 = CA-CB-CG-CD1
+chi1: TORSION ATOMS=6376,6378,6380,6383
+chi2: TORSION ATOMS=6378,6380,6383,6384
+
+ MOVINGRESTRAINT ...
+    ARG=chi2
+    # AT0 measured from the final npt.gro frame (100 ps), in radians.
+    STEP0=0         AT0=-1.298124994 KAPPA0=250.0
+    STEP1=20000000  AT1=0.0        KAPPA1=200.0
+    STEP2=40000000  AT2=0.25       KAPPA2=150.0
+    STEP3=50000000  AT3=0.5        KAPPA3=100.0
+  ... MOVINGRESTRAINT
+  
+# Perform Metadynamics on chi1 and chi2
+METAD ...
+  ARG=chi1,chi2
+  SIGMA=0.10,0.10
+  HEIGHT=0.1
+  PACE=500
+  FILE=HILLS_01
+  BIASFACTOR=8.0
+  TEMP=300
+... METAD
+
+PRINT ARG=chi1,chi2 FILE=COLVAR_01 STRIDE=5000

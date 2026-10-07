@@ -1,0 +1,57 @@
+title                   = Equilibration (20 ns)
+; Run parameters
+integrator              = md              ; leap-frog integrator
+nsteps                  = 10000000        ; 20 ns, (0.0005 ps × 40000000)
+dt                      = 0.002          ; time step 0.5 fs, ?定性更好
+
+; Output control
+nstenergy               = 10000           ; save energy 每5 ps (?少I/O??)
+nstlog                  = 10000           ; update log file 每5 ps
+nstxout-compressed      = 10000           ; coordinates output every 5 ps (适中)
+
+; Bond parameters
+continuation            = yes             ; 使用已有??，???行模?
+constraint_algorithm    = lincs           ; LINCS算法?束
+constraints             = h-bonds         ; H原子???束
+lincs_iter              = 4               ; 推??，保????定
+lincs_order             = 12              ; 推??，保??束精度
+
+; Neighborsearching
+cutoff-scheme           = Verlet          ; 推?
+ns_type                 = grid            ; ?格方式?算?居列表
+nstlist                 = 10              ; 每5 fs更新一次?居列表
+rlist                   = 1.2             ; ?居列表搜索范?
+
+; Van der Waals interaction
+vdwtype                 = cutoff
+vdw-modifier            = force-switch
+rvdw-switch             = 1.0
+rvdw                    = 1.2             ; Van der Waals cutoff
+
+; Electrostatics
+coulombtype             = PME             ; 粒子?格埃瓦?德?理?程??
+rcoulomb                = 1.2
+pme_order               = 4
+fourierspacing          = 0.16
+
+; Temperature coupling
+tcoupl                  = V-rescale       ; 推?恒?算法
+tc-grps                 = system
+tau_t                   = 1.0             ; 恒???常? (适中)
+ref_t                   = 300             ; 模??度 (300 K)
+
+; Pressure coupling (NPT ensemble)
+pcoupl                  = Parrinello-Rahman ; 推?恒?算法
+pcoupltype              = isotropic
+tau_p                   = 5.0             ; 恒???常? (适中)
+ref_p                   = 1.0             ; 目??力 (1 bar)
+compressibility         = 4.5e-5
+
+; Periodic boundary conditions
+pbc                     = xyz
+
+; Dispersion correction
+DispCorr                = no              ; ? CHARMM36 力?兼容，不使用色散校正
+
+; Velocity generation
+gen_vel                 = no              ; 已?有平衡后的速度，无需重新生成
